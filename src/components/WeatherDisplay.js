@@ -1,6 +1,5 @@
 import '../weatherDisplay.css';
 import React from "react";
-import Loader from './Loader';
 
 const warmMorning =
   "https://images.pexels.com/photos/1477430/pexels-photo-1477430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
