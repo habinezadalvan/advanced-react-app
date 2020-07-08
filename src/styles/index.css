@@ -1,0 +1,22 @@
+html{
+    font-size: 62.5%;
+
+    @media screen and  (max-width: 900px) {
+        font-size: 50%
+    };
+
+    @media screen and  (max-width: 780px) {
+        font-size: 40%
+    }
+}
+
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}

@@ -1,0 +1,14 @@
+
+.header__logo--big{
+    font-size: 2.4rem;
+    color: #fab700;
+}
+
+@media screen and (max-width: 780px){
+    .header__logo{
+        
+    }
+    .header__logo--big{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,36 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 8rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.835);
+    padding: 3rem 6rem;
+    width: 100%;
+}
+
+.header--section{
+    flex-basis: 30%
+}
+.search-bar{
+    flex-basis: 40%
+
+}
+
+@media screen and (max-width: 780px){
+    .header{
+        padding: 2rem;
+    }
+    .header__logo{
+        flex-basis: 25%;
+    }
+
+    .header__nav{
+        flex-basis: 25%
+    
+    }
+    .search-bar{
+        flex-basis: 50%;
+    }
+}
