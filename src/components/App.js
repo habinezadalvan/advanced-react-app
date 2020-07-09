@@ -1,10 +1,10 @@
 import React from 'react';
-import SearchBar from './SearchBar';
 import Home from './Home';
 
 const App = () => (
     <div>
         <Home />
+        <div style={{height:'1000px', width:"100%", backgroundColor: "red"}}></div>
     </div>
 );
 

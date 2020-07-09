@@ -5,9 +5,16 @@
     display: flex;
     height: 8rem;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.835);
+    background-color: #000;
     padding: 3rem 6rem;
     width: 100%;
+    z-index: 9;
+}
+
+.header-bg-inverse{
+    background-color: rgb(71, 71, 71);
+    box-shadow: .07rem .2rem 1rem rgba(0, 0, 0, 0.5);
+    transition: ease-in-out;
 }
 
 .header--section{
@@ -18,6 +25,10 @@
 
 }
 
+.header--big-letters{
+    font-size: 8rem;
+    color: #fab700;
+}
 @media screen and (max-width: 780px){
     .header{
         padding: 2rem;
@@ -32,5 +43,11 @@
     }
     .search-bar{
         flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .header--big-letters{
+        font-size: 5rem;
     }
 }

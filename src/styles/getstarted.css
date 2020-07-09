@@ -1,0 +1,56 @@
+.get-started-button{
+    height: 6rem;
+    width: 40%;
+    border-radius: .5rem;
+    border: 2px solid #fab700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: .4rem;
+    background-color: rgba(0, 0, 0, 0.787);
+}
+
+.get-started-button a,
+:link,
+:visited{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.get-started-button:hover{
+    background-color: #fab700;
+}
+
+@media screen and (max-width: 1240px){
+    .get-started-button{
+        width: 60%;
+        /* font-size: 2rem; */
+
+    }
+}
+
+@media screen and (max-width: 900px){
+   
+    .get-started-button{
+        width: 80%;
+        font-size: 2rem;
+
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .get-started-button{
+        font-size: 1.3rem;
+        height: 4rem;
+        width: 40%;
+    }
+    .get-started-button a{
+        font-weight: bold;
+    }
+
+}

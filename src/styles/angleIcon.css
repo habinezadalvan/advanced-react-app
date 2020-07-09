@@ -1,0 +1,39 @@
+.angle-icon{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 5rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    color: white;
+    background-color: #fab700;
+    z-index: 8;
+    animation: moveInRight 1s ease-in-out;
+}
+
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80%{
+        transform: translateX(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@media screen and (max-width:600px){
+   .angle-icon{
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    border-radius: 10rem;
+   }
+}

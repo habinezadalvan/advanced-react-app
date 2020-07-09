@@ -4,15 +4,15 @@ import SearchBar from "./SearchBar";
 import Logo from "./Logo";
 import Nav from "./Nav";
 
-const Header = () => {
+const Header = ({classname}) => {
   return (
-    <div className="header">
+    <div className={`header ${classname}`} id="header">
 
       <div className="header__logo header--section">
           <Logo/>
       </div>
       <SearchBar/>
-      <Nav/>
+      <Nav home="home" about="about" contacts="contacts" />
     </div>
   );
 };
