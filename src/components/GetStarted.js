@@ -8,7 +8,7 @@ const GetStarted = ({message}) => {
     return(
         <div className="get-started-button">
             <a href="/">{message}</a>
-            <AngleIcon iconName= {faAngleRight}/>
+            <AngleIcon iconName= {faAngleRight} hreference="/more"/>
         </div>
     );
 };

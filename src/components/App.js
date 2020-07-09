@@ -4,7 +4,7 @@ import Home from './Home';
 const App = () => (
     <div>
         <Home />
-        <div style={{height:'1000px', width:"100%", backgroundColor: "red"}}></div>
+        <div id="next-view" style={{height:'1000px', width:"100%", backgroundColor: "white"}}></div>
     </div>
 );
 
