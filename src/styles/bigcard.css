@@ -21,4 +21,9 @@
     .big-card{
         width: 95%;
     }
+
+    .big-card__heading h1{
+        font-size: 1rem;
+
+    }
 }
