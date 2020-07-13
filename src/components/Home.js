@@ -30,7 +30,7 @@ const useOnScreen = (options) => {
 
      return [setRef, visible];
 }
-const Home = () => {
+const Home = ({onSubmit}) => {
 
      const [setRef, visible] = useOnScreen({threshold: .1});
 
@@ -41,11 +41,11 @@ const Home = () => {
           {
                visible ? (
                <LandingPage>
-                    <Header/>
+                    <Header onSubmit={onSubmit}/>
                </LandingPage>) 
                :(
                <LandingPage>
-                         <Header classname ="header-bg-inverse"/>
+                         <Header classname ="header-bg-inverse" onSubmit={onSubmit}/>
                </LandingPage>
                )
           }

@@ -1,0 +1,22 @@
+img{
+    max-width: 27rem;
+}
+
+@media screen and (max-width: 1024px){
+    img{
+        max-width: 25rem;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    img{
+        max-width: 28rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    img{
+        max-width: 32rem;
+    }
+}

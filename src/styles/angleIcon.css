@@ -36,4 +36,7 @@
     font-size: 2rem;
     border-radius: 10rem;
    }
+   #up{
+       display: none;
+   }
 }
