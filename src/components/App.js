@@ -23,7 +23,7 @@ class App extends Component {
       <div>
         <Home onSubmit = {this.onSearchSubmit}/>
         <SecondSection  images ={this.state.images} input ={this.state.input}/>
-        <CommonSection />
+        {/* <CommonSection /> */}
       </div>
     );
   }
