@@ -18,6 +18,11 @@
     padding: 0 1rem;
 }
 
+.video-title h2 {
+    font-size: 1.4rem;
+}
+
+
 .video-title p {
     font-weight: 900;
     margin: 0rem;

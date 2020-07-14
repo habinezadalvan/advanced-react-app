@@ -9,16 +9,24 @@ class App extends Component {
 
     state = {videos: [], selectedVideo: null};
 
+
+    componentDidMount() {
+        this.onSearchSubmit('bruce melody');
+    }
+
     onSearchSubmit = async (input) => {
        const response = await baseAxios.get('/search', {
             params:{
                 q: input,
                 key: 'AIzaSyBE8FNrpG_cFpQ8c7o_ZVRpdk9VYu368z0',
                 part:'snippet',
-                maxResults: 100,
+                maxResults: 50,
             }
         });
-        this.setState({videos: response.data.items});
+        this.setState({
+            videos: response.data.items,
+            selectedVideo: response.data.items[0]
+        });
     
     }
 

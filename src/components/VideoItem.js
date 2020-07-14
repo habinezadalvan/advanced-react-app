@@ -10,7 +10,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
         <iframe
           src={videoSrc}
           title={video.snippet.title}
-          allowFullScreen
+          frameBorder="0"
           allow="accelerometer"
           onClick={() => onVideoSelect(video)}
         />
