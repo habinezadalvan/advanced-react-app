@@ -18,9 +18,9 @@ class App extends Component {
        const response = await baseAxios.get('/search', {
             params:{
                 q: input,
-                key: 'AIzaSyBE8FNrpG_cFpQ8c7o_ZVRpdk9VYu368z0',
+                key: 'AIzaSyDE7yDP6wTzu2sLlUvul6bQi_58RyzVN8Y',
                 part:'snippet',
-                maxResults: 50,
+                maxResults: 20,
             }
         });
         this.setState({

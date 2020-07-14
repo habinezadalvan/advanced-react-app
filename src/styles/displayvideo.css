@@ -27,3 +27,11 @@
     0% {top: 0rem}
     100%{ top: 6.25rem}
 }
+
+@media screen and (max-width: 600px){
+
+    .minified-iframe{
+        width: 100%;
+    }
+
+}

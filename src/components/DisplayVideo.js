@@ -10,9 +10,9 @@ const DisplayVideo = ({ selectedVideo }) => {
 
   if (!selectedVideo) {
     return (
-        <div class="ui segment extended-video">
-          <div class="ui active inverted dimmer">
-            <div class="ui text loader">Loading</div>
+        <div className="ui segment extended-video">
+          <div className="ui active inverted dimmer">
+            <div className="ui text loader">Loading</div>
           </div>
           <p></p>
         </div>
@@ -26,8 +26,7 @@ const DisplayVideo = ({ selectedVideo }) => {
             title={selectedVideo.snippet.title}
             allowFullScreen
             frameBorder="0"
-            allow="accelerometer"
-            id="lg-video"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             className="extended-iframe"
           />
         </div>

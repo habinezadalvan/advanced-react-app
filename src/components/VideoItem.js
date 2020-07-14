@@ -11,7 +11,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
           src={videoSrc}
           title={video.snippet.title}
           frameBorder="0"
-          allow="accelerometer"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           onClick={() => onVideoSelect(video)}
         />
       </div>

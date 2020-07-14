@@ -9,7 +9,6 @@
 
 .video-image iframe{
     height: 11rem;
-    /* object-fit: cover; */
     width: 100%;
 }
 
