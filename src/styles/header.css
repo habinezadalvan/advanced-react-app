@@ -8,6 +8,7 @@
     left: 0;
     width: 100%;
     background-color: rgb(255, 255, 255);
+    z-index: 9;
 }
 
 .header__logo-area{
