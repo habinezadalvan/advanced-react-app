@@ -1,0 +1,28 @@
+.extended-video{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+
+.extended-iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.video-info{
+    padding: 2rem 0rem;
+}
+
+.minified-iframe{
+    position: fixed;
+    top: 6.25rem;
+    left: 1rem;
+    height: 40%;
+    width: 50%;
+    animation: DisplaySmallVideo .5s ease-in;
+}
+
+@keyframes DisplaySmallVideo{
+    0% {top: 0rem}
+    100%{ top: 6.25rem}
+}

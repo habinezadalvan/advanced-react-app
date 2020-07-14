@@ -1,0 +1,30 @@
+.video-container{
+    display: flex;
+    cursor: pointer;
+}
+
+.video-image{
+    flex-basis: 40%;
+}
+
+.video-image iframe{
+    height: 11rem;
+    /* object-fit: cover; */
+    width: 100%;
+}
+
+.video-title{
+    flex-basis: 60%;
+    padding: 0 1rem;
+}
+
+.video-title p {
+    font-weight: 900;
+    margin: 0rem;
+}
+
+.shallow{
+    font-size: 1.3rem;
+    color: rgba(151, 151, 151, 1);
+    padding: .5rem 0rem;
+}
