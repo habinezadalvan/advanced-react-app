@@ -1,0 +1,14 @@
+.second-section{
+    @include sectionPadding (column-reverse);
+    &--left{
+    }
+    &--right{
+    }
+
+    @include responsive(tab-land){
+
+    }
+    @include responsive(phone){
+
+    }
+}

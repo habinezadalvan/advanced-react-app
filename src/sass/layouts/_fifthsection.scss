@@ -1,0 +1,12 @@
+.fifth-section{
+    @include sectionPadding(column);
+    &--left{
+      
+    }
+    &--right{
+
+    }
+    @include responsive(phone){
+    }
+
+}
