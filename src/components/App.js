@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import LandingPage from './LandingPage';
 
 
 const App = () => {
     return (
-        <div>Alive Digito...</div>
+        <Fragment>
+            <LandingPage />
+        </Fragment>
     )
 }
 

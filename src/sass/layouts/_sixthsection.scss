@@ -1,0 +1,25 @@
+.sixth-section{
+    @include sectionPadding(column);
+    padding-bottom: 0rem;
+    &--left{
+      
+    }
+    &--right{
+        @include positionContent(flex-end, flex-end);
+        .extra-rectangle{
+            @include extra-rectangle($color-secondary-dark-gray);
+            width: 90%;
+        }
+
+    }
+    @include responsive(phone){
+        padding-bottom: 0rem;
+        &--right{
+            justify-content: center;
+            .extra-rectangle{
+                width: 95%;
+            }
+        }
+    }
+
+}
