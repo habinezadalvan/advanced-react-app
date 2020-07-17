@@ -4,9 +4,13 @@
 @import './base/animations';
 @import './base/base';
 @import './base/typography';
-@import './base/utils';
+@import './base/utilities';
 
 @import './components/button';
+@import './components/corevalue';
+@import './components/logo';
+@import './components/socialicon';
+@import './components/sendmessage';
 
 @import './layouts/firstsection';
 @import './layouts/fifthsection';

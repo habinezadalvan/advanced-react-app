@@ -4,7 +4,10 @@
       
     }
     &--right{
+        .values-container{
+            // width: 95%;
 
+        }
     }
     @include responsive(phone){
     }
