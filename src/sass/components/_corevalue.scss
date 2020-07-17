@@ -1,6 +1,7 @@
 .core-value{
     display: flex;
     margin-bottom: 2rem;
+    transition: all .2s;
     &__box{
         flex-basis: 15%;
         background-color: $color-gray-medium;
@@ -13,11 +14,16 @@
     }
     &__content{
         font-size: 1.8rem;
-        font-weight: 300;
+        font-weight: $light-weight;
         flex-basis: 85%;
         padding: 0rem 1rem;
     }
     &__strong{
         color: $color-primary-dark-blue;
+    }
+
+    &:hover{
+        transform: scale(1.09);
+        box-shadow: $box-shadow;
     }
 }

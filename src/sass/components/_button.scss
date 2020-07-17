@@ -6,7 +6,7 @@
     background-color: $color-primary-dark-blue;
     font-size: 1.5rem;
     @include positioningContent(center, center);
-    border-radius: 1rem;
+    border-radius: $medium-border-radius;
     outline: none;
     cursor: pointer;
     &:hover{

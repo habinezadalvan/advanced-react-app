@@ -1,0 +1,27 @@
+.main-card{
+    width: 44%;
+    border: 1px solid $color-primary-dark-blue;
+    height: 19rem;
+    border-radius: $medium-border-radius;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: $light-weight;
+    margin-bottom: 2rem;
+    transition: all .2s;
+    img{
+        height: 4rem;
+        width: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    @include responsive(phone){
+        width: 44%;
+    }
+
+    &:hover{
+        border: none;
+        transform: scale(1.09);
+        box-shadow: $box-shadow;
+    }
+}
