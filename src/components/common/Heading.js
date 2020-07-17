@@ -10,4 +10,8 @@ const Heading = ({text1, text2}) => {
   );
 };
 
+Heading.defaultProps = {
+  text1: '',
+  text2: ''
+}
 export default Heading;

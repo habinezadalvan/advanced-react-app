@@ -20,6 +20,11 @@
     color: $color-primary-opacity-80;
     font-size: 2.5rem;
     padding-bottom: $medium-padding;
+
+    @include responsive(tab-port){
+        width: 80%;
+    }
+    
     @include responsive(phone){
         width: 90%;
     }

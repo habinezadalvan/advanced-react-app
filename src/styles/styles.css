@@ -44,6 +44,9 @@ body {
   color: rgba(0, 0, 0, 0.801);
   font-size: 2.5rem;
   padding-bottom: 3rem; }
+  @media (max-width: 56.25em) {
+    .heading {
+      width: 80%; } }
   @media (max-width: 37.5em) {
     .heading {
       width: 90%; } }
@@ -70,7 +73,8 @@ body {
 
 .core-value {
   display: flex;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  transition: all .2s; }
   .core-value__box {
     flex-basis: 15%;
     background-color: #C4C4C4;
@@ -88,10 +92,36 @@ body {
     padding: 0rem 1rem; }
   .core-value__strong {
     color: #0570c1; }
+  .core-value:hover {
+    transform: scale(1.09);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1); }
 
 .logo {
   height: 80%;
   width: 80%; }
+
+.main-card {
+  width: 44%;
+  border: 1px solid #0570c1;
+  height: 19rem;
+  border-radius: 1rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  transition: all .2s; }
+  .main-card img {
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 2rem; }
+  @media (max-width: 37.5em) {
+    .main-card {
+      width: 44%; } }
+  .main-card:hover {
+    border: none;
+    transform: scale(1.09);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1); }
 
 .social-icon {
   height: 4rem;
@@ -281,6 +311,15 @@ body {
   @media (max-width: 37.5em) {
     .fourth-section {
       flex-direction: column; } }
+  .fourth-section--right__container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    @media (max-width: 56.25em) {
+      .fourth-section--right__container {
+        width: 90%; } }
 
 .header {
   height: 5rem;
