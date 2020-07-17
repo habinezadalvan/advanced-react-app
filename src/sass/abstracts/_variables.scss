@@ -1,8 +1,44 @@
-$bg-color-secondary-light-gray: #C4C4C4;
+$bg-color-secondary-light-gray: #c4c4c437;
 $color-primary-white: #FFFFFF;
 $color-primary-dark-blue: #0570c1;
+$color-primary-light-blue: #048ffa;
+$color-primary-dark-opacity-70: #0570c1a5;
 $color-secondary-dark-gray: #444444;
 $color-primary-light-black: #0C0B0B;
 $color-primary-dark-black: #000;
+$color-primary-opacity-80: rgba(0, 0, 0, 0.801);
+$color-gray-opacity-50: rgba(214, 222, 228, 0.5);
+$color-black-opacity-50: rgba(0, 0, 0, 0.5);
+$color-gray-medium: #C4C4C4;
 
 
+// font-weights
+
+$light-weight: 300;
+$regular-weight: 400;
+$bold-weight: 600;
+$black-weight: 900;
+
+// font-families 
+
+$roboto:'roboto', sans-serif;
+$poppins: 'poppins', sans-serif;
+$indie-flower: 'Indie Flower', cursive;
+
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+
+// box-shodow
+
+$box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+
+
+// paddings
+
+$medium-padding: 3rem;
+
+
+// flex-basis
+
+$half-flex-basis: 50%;

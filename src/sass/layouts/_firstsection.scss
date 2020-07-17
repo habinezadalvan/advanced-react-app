@@ -31,16 +31,11 @@
         &--right{
             flex-basis: 50%;
             border: 2px solid red;
-            // display: flex;
-            // align-items: flex-end;
-            // justify-content: center;
-            @include positionContent(flex-end, center);
+            @include positioningContent(flex-end, center);
             .extra-rectangle{
                 @include extra-rectangle($color-primary-white);
             }
         }
-
-
         @include responsive(phone){
             flex-direction: column;
             &--right{

@@ -16,17 +16,14 @@
 
 @mixin sectionPadding($direction) {
     display: flex;
-    height: 60vh;
-    padding: 3rem 7.3rem 1rem;
+    padding: 3rem 10rem 1rem;
     background-color: #fff;
     &--left{
         flex-basis: 50%;
-        border: 2px solid blue;
       
     }
     &--right{
         flex-basis: 50%;
-        border: 2px solid blue;
 
     }
     @include responsive(tab-land){
@@ -47,7 +44,7 @@
     border-top-right-radius: 1rem;
 }
 
-@mixin positionContent($Xposition, $Yposition) {
+@mixin positioningContent($Xposition, $Yposition) {
     display: flex;
     align-items: $Xposition;
     justify-content: $Yposition;

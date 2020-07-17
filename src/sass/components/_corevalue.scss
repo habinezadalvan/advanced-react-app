@@ -1,0 +1,23 @@
+.core-value{
+    display: flex;
+    margin-bottom: 2rem;
+    &__box{
+        flex-basis: 15%;
+        background-color: $color-gray-medium;
+        @include positioningContent(center, center);
+        h1{
+            font-size: 8rem;
+            color: $color-primary-white;
+            text-transform: uppercase;
+        }
+    }
+    &__content{
+        font-size: 1.8rem;
+        font-weight: 300;
+        flex-basis: 85%;
+        padding: 0rem 1rem;
+    }
+    &__strong{
+        color: $color-primary-dark-blue;
+    }
+}

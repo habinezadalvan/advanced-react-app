@@ -1,19 +1,26 @@
 .sixth-section{
     @include sectionPadding(column);
-    padding-bottom: 0rem;
+   margin-bottom: -1rem;
     &--left{
-      
     }
     &--right{
-        @include positionContent(flex-end, flex-end);
+        @include positioningContent(flex-end, flex-end);
         .extra-rectangle{
             @include extra-rectangle($color-secondary-dark-gray);
             width: 90%;
+            @include positioningContent(center, center);
+            .social-icons-container{
+                width: 60%;
+                @include positioningContent(center, center);
+                justify-content: space-around;
+            }
         }
 
     }
     @include responsive(phone){
         padding-bottom: 0rem;
+        margin-bottom: -.11rem;
+        // border: 2px solid red;
         &--right{
             justify-content: center;
             .extra-rectangle{

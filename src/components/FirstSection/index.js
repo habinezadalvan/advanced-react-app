@@ -12,7 +12,7 @@ const FirstSection = () => {
         </div>
       </div>
       <div className="first-section__free-space">
-        <div className="first-section__free-space--left"></div>
+        <div className="first-section__free-space--left "></div>
         <div className="first-section__free-space--right">
           <div className="extra-rectangle"></div>
         </div>

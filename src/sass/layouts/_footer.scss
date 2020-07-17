@@ -1,4 +1,85 @@
 .footer{
-    height: 30vh;
-    background-color: black;
+    background-color: $color-primary-light-black;
+    color: $color-primary-white;
+    padding: $medium-padding;
+    font-size: 1.8rem;
+    z-index: 99;
+    .footer__logo-and-content{
+        display: flex;
+        .footer__logo{
+            flex-basis: $half-flex-basis;
+            padding: $medium-padding;
+            @include positioningContent(center, center);
+            .footer__logo--container{
+                height: 9rem;
+                width: 9rem;
+            }
+        }
+        .footer__content{
+            flex-basis: $half-flex-basis;
+            display: flex;
+            padding: $medium-padding;
+
+            .footer__content--line{
+                flex-basis: 10%;
+                display: flex;
+                .line{
+                    width: 1px;
+                    height: 20rem;
+                    border: .8px solid $color-primary-white;
+                    margin-left: -4rem;
+                }
+                @include responsive(phone){
+                    flex-basis: $half-flex-basis;
+                    align-items: center;
+                    .line{
+                        margin-left: 0rem;
+                    }
+                    .invisible-div{
+                        flex-basis: 90%;
+                        @include positioningContent(center, center);
+                        
+                    }
+                }
+            }
+            .footer__content--info{
+                flex-basis: 90%;
+                @include positioningContent(center, flex-start);
+                .footer__info{
+                    line-height: 3.5rem;
+                    font-weight: $light-weight;
+                }
+                @include responsive(phone){
+                    flex-basis: $half-flex-basis;
+                    .footer__info{
+                        line-height: 2.5rem;
+                    }
+                }
+            }
+            @include responsive(phone){
+                padding: 0rem;
+            }
+        }
+    
+
+        @include responsive(phone){
+            flex-direction: column-reverse;
+        }
+    }
+    
+    &__free-space{
+        padding: 1rem;
+        text-align: center;
+        // display: flex;
+        // &--left{
+        //     flex-basis: $half-flex-basis;
+        // }
+        // &--right{
+        //     flex-basis: $half-flex-basis;
+        //     @include positioningContent(center, center);
+        // }
+        // @include responsive(phone){
+        //     flex-direction: column;
+        // }
+    }
 }

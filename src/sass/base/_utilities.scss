@@ -1,0 +1,30 @@
+.invisible{
+    display: none;
+   @include responsive(phone){
+       display: block;
+   }
+}
+
+.phone-invisible{
+    display: block;
+   @include responsive(phone){
+       display: none;
+   }
+}
+
+.heading{
+    width: 40%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0rem auto;
+    color: $color-primary-opacity-80;
+    font-size: 2.5rem;
+    padding-bottom: $medium-padding;
+    @include responsive(phone){
+        width: 90%;
+    }
+}
+
+.colored-heading{
+    color: $color-primary-dark-blue;
+}
