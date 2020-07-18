@@ -4,8 +4,8 @@ import FormIput from "../common/FormInput";
 
 class SendMessage extends Component {
   state = { email: "", subject: '', message: ''};
-  onInputChange = ({ target: { value } }) => {
-    this.setState({ email: value, subject: value, message: value});
+  onInputChange = ({target: {name, value}}) => {
+    this.setState({ [name]: value });
   };
 
   onFormSubmit = (e) => {

@@ -1,9 +1,9 @@
 import React from "react";
 
-const MainCard = ({ imageSrc, text }) => {
+const MainCard = ({ imageSrc, text, classname }) => {
   return (
-    <div className="main-card">
-      <img src={imageSrc} alt="automate" />
+    <div className={classname}>
+      <img src={imageSrc} alt="automate"/>
       <p>{text}</p>
     </div>
   );

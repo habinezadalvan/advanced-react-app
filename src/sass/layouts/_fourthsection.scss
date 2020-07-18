@@ -5,14 +5,34 @@
     }
     &--right{
         &__container{
+            position: relative;
             width: 80%;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            @include animation(zoomIn);
+
             @include responsive(tab-port){
                 width: 90%;
             }
+        }
+    }
+
+    &__image{
+        height: 90%;
+        position: relative;
+        @include animation(moveInLeft);
+        img{
+            width: 100%;
+            color: black;
+        }
+        .screenshot{
+            position: absolute;
+            top: 2rem;
+            left: 0;
+            opacity: .92;
+            border-radius: 1rem;
         }
     }
     @include responsive(phone){
