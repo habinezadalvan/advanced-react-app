@@ -106,7 +106,7 @@ body {
     margin-bottom: 2rem; }
   @media (max-width: 37.5em) {
     .big-main-card, .small-main-card {
-      width: 44%; } }
+      width: 45%; } }
   .big-main-card:hover, .small-main-card:hover {
     border: none;
     transform: scale(1.09);
@@ -362,7 +362,7 @@ body {
     animation: zoomIn 2s ease-in; }
     @media (max-width: 56.25em) {
       .fourth-section--right__container {
-        width: 90%; } }
+        width: 100%; } }
   .fourth-section__image {
     height: 90%;
     position: relative;

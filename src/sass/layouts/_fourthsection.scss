@@ -14,7 +14,7 @@
             @include animation(zoomIn);
 
             @include responsive(tab-port){
-                width: 90%;
+                width: 100%;
             }
         }
     }
