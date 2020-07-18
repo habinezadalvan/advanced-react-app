@@ -5,12 +5,7 @@
     }
     &--right{
         &__container{
-            position: relative;
-            width: 80%;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            @include styleCard;
             @include animation(zoomIn);
 
             @include responsive(tab-port){

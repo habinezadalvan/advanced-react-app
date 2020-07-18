@@ -1,0 +1,38 @@
+.percentage-card-container{
+    @include styleCard;
+    padding: $medium-padding;
+    .percentage-card{
+        width: 50%;
+        height: 19rem;
+        justify-content: start;
+        font-size: $medium-font-size;
+        padding: $medium-padding;
+        color: $color-gray-opacity-66;
+        h1{
+            font-size: 5rem;
+            color: rgba($color: $color-primary-dark-blue, $alpha: 1);
+            font-weight: $light-weight;
+        }
+        @include responsive(phone){
+        padding: 1rem;
+        }
+    }
+
+    .top-left{
+        border-right: 1px solid $color-gray-opacity-40;
+        @include animation(show);
+    }
+    .top-right{
+        border-bottom: 1px solid $color-gray-opacity-40;
+        margin-bottom: 1rem;
+        @include animation(show);
+    }
+    .bottom-left{
+        border-top: 1px solid $color-gray-opacity-40;
+        @include animation(show);
+    }
+    .bottom-right{
+        border-left: 1px solid $color-gray-opacity-40;
+        @include animation(show);
+    }
+}

@@ -55,3 +55,13 @@
     transition: all .2s;
     animation: $animationName 2s ease-in;
 }
+
+
+@mixin styleCard {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

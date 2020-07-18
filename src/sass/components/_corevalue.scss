@@ -1,10 +1,10 @@
 .core-value{
     display: flex;
     margin-bottom: 2rem;
-    @include animation(moveInRight);
+    @include animation(show);
     &__box{
         flex-basis: 15%;
-        background-color: $color-gray-medium;
+        background-color: $color-gray-opacity-66;
         @include positioningContent(center, center);
         h1{
             font-size: 8rem;

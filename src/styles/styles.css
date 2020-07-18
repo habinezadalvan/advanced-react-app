@@ -13,6 +13,14 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes moveInLeftShort {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -20,6 +28,20 @@
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+@keyframes moveInRightShort {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @keyframes zoomIn {
   0% {
@@ -46,7 +68,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "roboto", sans-serif; }
+  font-family: Inter, "Inter UI", Helvetica, Arial, sans-serif; }
 
 *,
 *::after,
@@ -133,10 +155,10 @@ body {
   display: flex;
   margin-bottom: 2rem;
   transition: all .2s;
-  animation: moveInRight 2s ease-in; }
+  animation: show 2s ease-in; }
   .core-value__box {
     flex-basis: 15%;
-    background-color: #C4C4C4;
+    background-color: rgba(128, 128, 128, 0.664);
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -162,6 +184,46 @@ body {
 .small-main-card {
   width: 15%;
   height: 12rem; }
+
+.percentage-card-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem; }
+  .percentage-card-container .percentage-card {
+    width: 50%;
+    height: 19rem;
+    justify-content: start;
+    font-size: 1.8rem;
+    padding: 3rem;
+    color: rgba(128, 128, 128, 0.664); }
+    .percentage-card-container .percentage-card h1 {
+      font-size: 5rem;
+      color: #0570c1;
+      font-weight: 300; }
+    @media (max-width: 37.5em) {
+      .percentage-card-container .percentage-card {
+        padding: 1rem; } }
+  .percentage-card-container .top-left {
+    border-right: 1px solid rgba(128, 128, 128, 0.472);
+    transition: all .2s;
+    animation: show 2s ease-in; }
+  .percentage-card-container .top-right {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.472);
+    margin-bottom: 1rem;
+    transition: all .2s;
+    animation: show 2s ease-in; }
+  .percentage-card-container .bottom-left {
+    border-top: 1px solid rgba(128, 128, 128, 0.472);
+    transition: all .2s;
+    animation: show 2s ease-in; }
+  .percentage-card-container .bottom-right {
+    border-left: 1px solid rgba(128, 128, 128, 0.472);
+    transition: all .2s;
+    animation: show 2s ease-in; }
 
 .social-icon {
   height: 4rem;
