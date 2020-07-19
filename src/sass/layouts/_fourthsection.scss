@@ -6,8 +6,6 @@
     &--right{
         &__container{
             @include styleCard;
-            @include animation(zoomIn);
-
             @include responsive(tab-port){
                 width: 100%;
             }
@@ -17,7 +15,6 @@
     &__image{
         height: 90%;
         position: relative;
-        @include animation(moveInLeft);
         img{
             width: 100%;
             color: black;

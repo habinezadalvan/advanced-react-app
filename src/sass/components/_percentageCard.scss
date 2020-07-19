@@ -15,6 +15,7 @@
         }
         @include responsive(tab-port){
         padding: 1rem;
+        color: $color-primary-light-black;
         }
     }
 
@@ -22,20 +23,20 @@
 
     .top-left{
         border-right: 1px solid $color-gray-opacity-40;
-        @include animation(moveInLeftShort);
+        // @include animation(moveInLeftShort);
     }
     .top-right{
         border-bottom: 1px solid $color-gray-opacity-40;
         margin-bottom: 1rem;
-        @include animation(moveInTopShort);
+        // @include animation(moveInTopShort);
     }
     .bottom-left{
         border-top: 1px solid $color-gray-opacity-40;
-        @include animation(moveInBottomShort);
+        // @include animation(moveInBottomShort);
     }
     .bottom-right{
         border-left: 1px solid $color-gray-opacity-40;
-        @include animation(moveInRightShort);
+        // @include animation(moveInRightShort);
     }
 
     @include responsive(tab-port){
