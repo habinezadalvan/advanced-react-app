@@ -21,7 +21,7 @@
     color: $color-primary-opacity-80;
     font-size: $medium-font-size;
     padding-bottom: $medium-padding;
-    @include animation(moveInLeft);
+    @include animation(show);
 
     @include responsive(tab-port){
         width: 80%;
@@ -68,4 +68,42 @@
 
 .small-main-card{
     @extend .big-main-card;
+}
+
+// zooming and displaying animations
+.zoom-in-animation{
+    @include animation(zoomIn);
+}
+
+.show-animation{
+    @include animation(show);
+}
+
+// moving from far animations
+
+.move-in-left-animation-lg{
+    @include animation(moveInLeft);
+}
+
+.move-in-right-animation-lg{
+    @include animation(moveInRight);
+}
+
+
+// moving from near animations
+
+.move-in-left-short{
+    @include animation(moveInLeftShort);
+}
+
+.move-in-right-short{
+    @include animation(moveInRightShort);
+}
+
+.move-in-top-short{
+    @include animation(moveInTopShort);
+}
+
+.move-in-bottom-short{
+    @include animation(moveInBottomShort);
 }

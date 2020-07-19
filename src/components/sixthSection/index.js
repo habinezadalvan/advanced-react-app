@@ -5,6 +5,7 @@ import linkedin from "../../assets/svg/linkedin.svg";
 import facebook from "../../assets/svg/facebook.svg";
 import instagram from "../../assets/svg/instagram.svg";
 import SendMessage from "./SendMessage";
+import box from '../../assets/images/box.png';
 
 
 const SixthSection = () => {
@@ -14,6 +15,7 @@ const SixthSection = () => {
         <SendMessage />
       </div>
       <div className="sixth-section--right">
+
         <div className="extra-rectangle">
           <div className="social-icons-container">
             <SocialIcon icon={twitter} alt="twitter" />

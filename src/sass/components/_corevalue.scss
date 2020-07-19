@@ -1,7 +1,7 @@
 .core-value{
     display: flex;
     margin-bottom: 2rem;
-    @include animation(show);
+    @include animation(moveInRight);
     &__box{
         flex-basis: 15%;
         background-color: $color-gray-opacity-66;

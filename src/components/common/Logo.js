@@ -1,10 +1,13 @@
 import React from 'react';
-import logo from '../../assets/images/Screen Shot 2020-07-16 at 16.58.08.png'
+import logo from '../../assets/images/digitologo.png'
 
 
 const Logo = () => {
     return (
-        <img className="logo" src={logo} alt="logo"/>
+        <div className="logo-container">
+            <img className="logo" src={logo} alt="logo"/>
+            <p>Digito</p>
+        </div>
     )
 }
 

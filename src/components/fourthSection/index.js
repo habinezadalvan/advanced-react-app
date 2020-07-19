@@ -5,17 +5,14 @@ import softwaredev from '../../assets/images/coding.png';
 import graphicDesign from '../../assets/images/pen.png';
 import digitalmarketing from '../../assets/images/digital-marketing.png';
 import MainCard from "../common/MainCard";
-import allappleproductsgif from '../../assets/images/appleproducts.gif';
-import screenshot from '../../assets/images/screenshot.png'
-const FourthSection = () => {
+import WhatWeDoGraphic from "./WhatWeDoGraphic";
+const FourthSection = ({referance, inView, entry}) => {
+ 
   return (
     <div className="fourth-section">
       <div className="fourth-section--left">
         <Heading text2="what we do"/>
-        <div className="fourth-section__image">
-          <img src={allappleproductsgif} alt="all apple products"/>
-          <img src={screenshot} alt="screenshot" className="screenshot"/>
-        </div>
+        <WhatWeDoGraphic referance={referance} inView={inView} entry={entry}/>
       </div>
       <div className="fourth-section--right">
         <div className="fourth-section--right__container">

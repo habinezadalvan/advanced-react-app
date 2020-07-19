@@ -13,26 +13,33 @@
             color: rgba($color: $color-primary-dark-blue, $alpha: 1);
             font-weight: $light-weight;
         }
-        @include responsive(phone){
+        @include responsive(tab-port){
         padding: 1rem;
         }
     }
 
+
+
     .top-left{
         border-right: 1px solid $color-gray-opacity-40;
-        @include animation(show);
+        @include animation(moveInLeftShort);
     }
     .top-right{
         border-bottom: 1px solid $color-gray-opacity-40;
         margin-bottom: 1rem;
-        @include animation(show);
+        @include animation(moveInTopShort);
     }
     .bottom-left{
         border-top: 1px solid $color-gray-opacity-40;
-        @include animation(show);
+        @include animation(moveInBottomShort);
     }
     .bottom-right{
         border-left: 1px solid $color-gray-opacity-40;
-        @include animation(show);
+        @include animation(moveInRightShort);
     }
+
+    @include responsive(tab-port){
+        padding-top: 5rem;
+    }
+
 }

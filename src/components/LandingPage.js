@@ -7,16 +7,18 @@ import FourthSection from './fourthSection';
 import FifthSection from './fifthSection';
 import SixthSection from './sixthSection';
 import Footer from './footer';
+import Box from './boxsection/Box';
 
 
-const LandingPage = () => {
+const LandingPage = ({referance, inView, entry}) => {
     return (
         <div className="home-page">
          <Header />
          <FirstSection />
          <SecondSection />
          <ThirdSection />
-         <FourthSection />
+         <FourthSection referance={referance} inView={inView} entry={entry} />
+         <Box />
          <FifthSection />
          <SixthSection />
          <Footer/>
