@@ -1,11 +1,25 @@
 .third-section{
     @include sectionPadding(column);
-
     &--left{
-      
+        position: relative;
+        flex-basis: 40%;
+        z-index: 0;
+        &__container{
+            width: 100%;
+            background-color: transparent;
+            z-index: 1;
+            @include positioningContent(center, start);
+      }
+
+      @include responsive(phone){
+          &__container{
+              flex-direction: column;
+
+          }
+      }
     }
     &--right{
-
+        flex-basis: 60%;
     }
     @include responsive(phone){
     }

@@ -1,5 +1,14 @@
 .small-main-card{
     @extend .big-main-card;
-    width: 15%;
+    width: 12rem;
     height: 12rem;
+    padding: 2rem 0rem;
+    font-size: 1.5rem;
+    margin-right: 4rem;
+    background-color: #fff;
+    img{
+        height: 3rem;
+        width: 3rem;
+        margin-bottom: 1rem;
+    }
 }

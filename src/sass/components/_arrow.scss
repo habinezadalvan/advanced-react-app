@@ -1,0 +1,47 @@
+.arrow{
+    width: 90%;
+    height: 2rem;
+    @include positioningContent(center, flex-start);
+    position: absolute;
+    top: 37%;
+    left: 4rem;
+    z-index: -3;
+    &__stiff{
+        flex-basis: 95%;
+        height: .3rem;
+        background-color: $color-primary-dark-blue;
+        margin-right: -.7rem;
+
+    }
+    &__pointer-right{
+        flex-basis: 5%;
+        font-size: 2rem;
+        color: $color-primary-dark-blue;
+        z-index: 0;
+
+    }
+
+    &__pointer-down{
+        @extend .arrow__pointer-right;
+        display: none;
+    }
+
+    @include responsive(phone){
+        top: 2rem;
+        left: 44%;
+        height: 100%;
+        width: 1.5rem;
+        flex-direction: column;
+        &__stiff{
+            border: 1px solid $color-primary-dark-blue;
+        }
+        &__pointer-right{
+            display: none;
+        }
+        &__pointer-down{
+            display: block;
+            margin-top: -1.3rem;
+            margin-right: -.6rem;
+        }
+    }
+}

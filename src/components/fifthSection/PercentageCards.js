@@ -19,7 +19,7 @@ const PercentageCards = () => {
         }, 
         opacity: 0.5,
         duration: 3,
-        scale: 1.1});
+        scale: 0.8});
     }, [percentages])
 
     return(

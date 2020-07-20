@@ -5,8 +5,6 @@ import linkedin from "../../assets/svg/linkedin.svg";
 import facebook from "../../assets/svg/facebook.svg";
 import instagram from "../../assets/svg/instagram.svg";
 import SendMessage from "./SendMessage";
-import box from '../../assets/images/box.png';
-
 
 const SixthSection = () => {
   return (

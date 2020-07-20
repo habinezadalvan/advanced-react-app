@@ -98,3 +98,19 @@
         transform: translate(1);
     }
 }
+
+
+@keyframes moving-box-1 {
+    0% {
+        left: 20%;
+        top: -40px;
+    }
+    30% {
+        left: 60%;
+        top: 30%;
+    }
+    100% {
+        left: 105%;
+        top: 50%;
+    }
+}

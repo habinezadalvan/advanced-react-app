@@ -1,8 +1,13 @@
 .logo-container{
     text-align: center;
-}
-
-.logo{
-    height: 80%;
-    width: 80%;
+    font-family: $sirin-stencil;
+    .logo{
+        height: 80%;
+        width: 80%;
+    }
+    p{
+        margin-top: -1rem;
+        color: $color-primary-dark-blue;
+        font-weight: $regular-weight;
+    }
 }

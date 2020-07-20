@@ -23,7 +23,7 @@ const Box = () => {
     return(
         <div className="box-section">
             <img src={box} alt="box-section"/>
-            <div className="box-section__cover" ref={cover}><h1>Turning impossibilities to possibilities</h1></div>
+            <div className="box-section__cover" ref={cover}><h1>Turning impossibilities into possibilities.</h1></div>
          </div>
     )
 }

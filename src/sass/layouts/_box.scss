@@ -19,6 +19,13 @@
         font-weight: bolder;
         text-align: center;
         @include positioningContent(center, center);
+        @include responsive(tab-land){
+            font-size: 4rem;
+            background-color: $color-primary-dark-blue;
+            h1{
+                width: 80%;
+            }
+        }
 
         @include responsive(phone){
             font-size: 2rem;

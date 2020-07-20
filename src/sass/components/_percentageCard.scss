@@ -14,12 +14,19 @@
             font-weight: $light-weight;
         }
         @include responsive(tab-port){
-        padding: 1rem;
+        padding: 5rem 2rem;
         color: $color-primary-light-black;
+            h1{
+                margin-top: 1rem;
+                font-size: 4rem;
+            }
         }
     }
 
 
+    @include responsive(tab-port){
+        width: 100%;
+    }
 
     .top-left{
         border-right: 1px solid $color-gray-opacity-40;
