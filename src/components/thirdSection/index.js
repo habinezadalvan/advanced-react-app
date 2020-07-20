@@ -1,6 +1,8 @@
 import React from "react";
 import MainCard from "../common/MainCard";
 import automate from "../../assets/images/automation.png";
+import analysis from "../../assets/images/analysis.png";
+import future from "../../assets/images/future.png";
 import Arrow from "../common/Arrow";
 
 const ThirdSection = () => {
@@ -14,13 +16,13 @@ const ThirdSection = () => {
             classname="small-main-card"
           />
           <MainCard
-            imageSrc={automate}
-            text="Meet client"
+            imageSrc={analysis}
+            text="Analysing needs"
             classname="small-main-card"
           />
           <MainCard
-            imageSrc={automate}
-            text="Meet client"
+            imageSrc={future}
+            text="Planning & system design"
             classname="small-main-card"
           />
         </div>

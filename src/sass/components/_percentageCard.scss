@@ -26,11 +26,12 @@
 
     @include responsive(tab-port){
         width: 100%;
+        margin-top: -4rem;
+
     }
 
     .top-left{
         border-right: 1px solid $color-gray-opacity-40;
-        // @include animation(moveInLeftShort);
     }
     .top-right{
         border-bottom: 1px solid $color-gray-opacity-40;

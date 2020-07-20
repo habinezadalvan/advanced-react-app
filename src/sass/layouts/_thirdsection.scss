@@ -12,9 +12,10 @@
       }
 
       @include responsive(phone){
-          &__container{
-              flex-direction: column;
 
+          &__container{
+            @include positioningContent(center, center);
+            flex-direction: column;
           }
       }
     }
