@@ -4,7 +4,6 @@
     height: 12rem;
     padding: 2rem 0.5rem;
     font-size: 1.5rem;
-    margin-right: 4rem;
     background-color: #fff;
     margin-bottom: 0rem;
     img{
@@ -15,10 +14,6 @@
 
     @include responsive(lg-desktop){
         margin-right: 8rem;
-    }
-    @include responsive(tab-land){
-        margin-right: 2rem;
-    
     }
 
     @include responsive(tab-port){
@@ -32,18 +27,16 @@
     }
     }
 
-    @include responsive(phone){
-        width: 11rem;
-        height: 11rem;
-        font-size: 1rem;
-        padding: 1rem 0.5rem;
-        margin-right: 4rem;
+    @include responsive(tab-port){
+        width: 10rem;
+        height: 10rem;
+        font-size: .8rem;
+        padding: 1rem 0rem;
         margin-bottom: 2rem;
-
         img{
             height: 2.5rem;
             width: 2.5rem;
-            margin-bottom: .5rem;
+            margin-bottom: .7rem;
         }
 
         }
@@ -52,117 +45,129 @@
 
 .middle-card{
     @extend .small-main-card;
-    margin-right: 0rem;
+    @include responsive(lg-desktop){
+        margin-left: 8rem;
+    }
 }
 
 .write-code{
-    @extend .middle-card;
+    @extend .small-main-card;
     position: absolute;
     top: 36%;
-    left: 2%;
-    @include responsive(lg-desktop){
-        left: 7%;
-    }
-    @include responsive(tab-land){
-        top: 38%;
-    }
-    @include responsive(phone){
+    left: 10%;
+  
+    @include responsive(tab-port){
         top: -10%;
         left: 42%;
     }
+
+    @include responsive(over-450){
+        left: 44%;
+    }
+
+    @include responsive(iphone6-7-8-exact){
+       left: 39%;
+     }
 }
 
 .testing{
-    @extend .middle-card;
+    @extend .small-main-card;
     position: absolute;
     top: 81%;
-    left: 20.5%;
-    @include responsive(lg-desktop){
-        left: 23%;
-    }
-    @include responsive(phone){
+    left: 28%;
+  
+    @include responsive(tab-port){
         top: 14%;
-        left: 10%;
+        left: 9%;
+    }
+
+    @include responsive(over-450){
+        left: 24%;
+    }
+
+    @include responsive(iphone6-7-8-exact){
+       left: 4%;
     }
 }
 
 .features-delivery{
-    @extend .middle-card;
+    @extend .small-main-card;
     position: absolute;
     top: 81%;
     left: 56.8%;
-    @include responsive(phone){
+    @include responsive(tab-port){
         top: 60%;
-        left: 10%;
+        left: 9%;
     }
+
+    @include responsive(over-450){
+        left: 24%;
+    }
+
+    @include responsive(iphone6-7-8-exact){
+        left: 4%;
+     }
 }
 
 .share-updates{
-    @extend .middle-card;
+    @extend .small-main-card;
     position: absolute;
     top: 36%;
-    left: 74%;
-
-    @include responsive(lg-desktop){
-        left: 70%;
-    }
-    @include responsive(tab-land){
-        top: 38%;
-        
-    }
-    @include responsive(phone){
+    left: 70%;
+    @include responsive(tab-port){
         top: 85%;
         left: 42%;
     }
 }
 
 .client-feedback {
-    @extend .middle-card;
+    @extend .small-main-card;
     position: absolute;
     top: -7%;
     left: 56.5%;
-    @include responsive(phone){
+    @include responsive(tab-port){
         top: 60%;
         left: 73%;
+    }
+
+    @include responsive(over-450){
+        left: 64%;
     }
 }
 
 .optimization{
-    @extend .middle-card;
+    @extend .small-main-card;
     position: absolute;
     top: -7%;
-    left: 20.5%;
+    left: 28%;
 
-    @include responsive(lg-desktop){
-        left: 23%;
-    }
-
-    @include responsive(phone){
+    @include responsive(tab-port){
         top: 14%;
         left: 73%;
+    }
+
+    @include responsive(over-450){
+        left: 64%;
     }
 }
 
 .product-delivery{
-    @extend .middle-card;
+    @extend .small-main-card;
     position: absolute;
     top: -50%;
-    left: 20%;
+    left: 28%;
 
-    @include responsive(lg-desktop){
-        top: -49%;
-        left: 23%;
-    }
-    @include responsive(tab-land){
-        top: -40%;  
-    }
-
-    @media (max-width: 64em) {
-        top: -47%;
-    }
-
-    @include responsive(phone){
+    @include responsive(tab-port){
         top: -30%;
         left: 73%;
     }
+
+    @include responsive(over-450){
+        left: 64%;
+    }
+
+    @include responsive(iphone6-7-8-exact){
+        top: -39%;
+     }
+    
 }

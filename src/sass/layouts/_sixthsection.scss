@@ -20,7 +20,6 @@
     @include responsive(phone){
         padding-bottom: 0rem;
         margin-bottom: -.11rem;
-        // border: 2px solid red;
         &--right{
             justify-content: center;
             .extra-rectangle{

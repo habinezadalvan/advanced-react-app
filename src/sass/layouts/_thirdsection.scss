@@ -1,111 +1,111 @@
 .third-section{
     @include sectionPadding(column);
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+    padding: 0rem 0rem;
+    @include responsive(tab-port){
+        display: flex;
+        flex-direction: column;
+    }
     &--left{
         position: relative;
         flex-basis: 45%;
         z-index: 0;
         &__container{
-            margin-top: 22%;
+            margin-top: 18%;
             width: 100%;
             background-color: transparent;
             z-index: 1;
             @include positioningContent(center, center);
             margin-left: 3%;
-
+            justify-content: space-around;
             @include responsive(lg-desktop){
-                margin-top: 20%;
+                margin-top: 18%;
             }
 
             @media (max-width: 88.5em) {
                 margin-top: 19%;
-                border: 2px solid red;
             }
 
             @media (max-width: 72.375em) {
                 margin-top: 35%;
 
             }
-
-            @media (max-width: 64em) {
-                margin-top: 22%;
-
+            @include responsive(ipad-pro){
+                margin-top: 29%;
             }
 
-            // @media (max-width: 62.5em) {
-            //     margin-top: 37%;
-            //     margin-left: 0rem;
-            // }
+            @include responsive(ipad){
+                margin-top: 37%;
 
-           
-            // @media (max-width: 48em) {
-            //     margin-top: 22%;
-            //     // border: 2px solid red;
-            // }
-
-            @include responsive(phone){
-                padding: 0rem;
+             }
+            @include responsive(tab-port){
                 flex-direction: column;
-                margin-left: 2rem;
+                margin-left: 0rem;
                 margin-top: 0rem;
             }
-
-
-            @media (max-width: 26.6em) {
-        
-                // margin-top: 0rem;
-                // padding: 3rem 0rem;
-                // border: 2px solid red;
-
-                }
       }
 
       @include responsive(lg-desktop){
-        margin-left: 6rem;
+        margin-left: 8rem;
     }
+
+    @include responsive(tab-port){
+         margin-bottom: 9rem;
+    }
+
     }
     &--right{
         flex-basis: 55%;
-        // border: 1px solid red;
         position: relative;
         .main{
-            // width: 90%;
-            // border: 1px solid black;
-            margin-right: 5%;
             @include positioningContent(center, center);
             .internal-cards-container{
-                height: 60vh;
-                width: 60vh;
+                height: 45rem;
+                width: 45rem;
                 border: 2px solid $color-primary-dark-blue;
                 border-radius: 50%;
                 margin-top: 2rem auto;
             @include positioningContent(center, center);
 
-            @include responsive(tab-land){
-                height: 50vh;
-                width: 50vh;
+            @include responsive(lg-desktop){
+                height: 50rem;
+                width: 50rem;
             }
 
-            @include responsive(tab-port){
-                height: 37vh;
-                width: 37vh;
+            @include responsive(android-land){
+                margin-right: 0rem;
+            }
+            @include responsive(iphone6-7-8-exact){
+                height: 35rem;
+                width: 35rem;
+
+            }
             }
 
-            @include responsive(phone){
-                // height: 35vh;
-                // width: 35vh;
-            }
+
+
+            @include responsive(android-land){
+                margin-right: 0rem;
             }
 
-            @include responsive(phone){
-               margin-right: 0rem;
+
+            @media (max-width: 62.5em) {
+                margin-right: 0rem;
+                
             }
         }
-        @include responsive(phone){
-            margin-top: 7rem;
-        }
+
+        @include responsive(tab-port){
+            margin-bottom: 9rem;
+       }
+
     }
-  
+    @include responsive(ipad){
+       margin: 0rem;
+    }
 
+    @include responsive(iphone6-7-8){
+        padding: 0rem;
+    }
 }
