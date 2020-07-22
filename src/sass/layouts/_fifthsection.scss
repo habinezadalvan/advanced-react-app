@@ -12,10 +12,15 @@
                 height: 17rem;
                 -webkit-transition: -webkit-transform 1s ease-in-out;
                 transition:         transform 1s ease-in-out;
+
+                @include responsive(phone){
+                    height: 12rem;
+                }
                 &:hover{
                     -webkit-transform: rotate(360deg);
                     transform: rotate(360deg);
                 }
+    
             }
 
 

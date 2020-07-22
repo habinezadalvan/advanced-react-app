@@ -1,11 +1,14 @@
 .free-section{
     @include sectionPadding(column);
     padding: 0rem 10rem;
-    
+
+    @media (max-width: 56.25em) and (min-width: 37.5em) {
+        margin-bottom: -9rem;
+        padding: 0rem;
+    }
     &__left{
         flex-basis: 50%;
     }
-
     &__right{
         flex-basis: 50%;
     }

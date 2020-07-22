@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import Heading from "../common/Heading";
-import image from '../../assets/images/mockup last.png';
+import image from '../../assets/images/project chriss one.png';
 
 const SecondSection = () => {
   const team = React.createRef();
@@ -16,7 +16,7 @@ const SecondSection = () => {
         toggleActions: 'restart pause none none'
       },
     duration: 2,
-    x: 200,
+    x: 100,
   })
 
   }, [team]);

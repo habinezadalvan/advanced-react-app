@@ -56,6 +56,10 @@
     @if $breakpoint == very-small-screen {
         @media (max-width: 21.250em) {@content} //340px
     };
+
+    @if $breakpoint == very-very-small-screen {
+        @media (max-width: 17.500em) {@content} //280px
+    };
 }
 
 
