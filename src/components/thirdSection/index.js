@@ -14,13 +14,11 @@ import delivery from "../../assets/images/order.png";
 import Arrow from "../common/Arrow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import Heading from "../common/Heading";
 
 const ThirdSection = () => {
   return (
     <div className="third-section">
       <div className="third-section--left">
-        <Heading text1="How we do" text2="what we do" />
         <div className="third-section--left__container">
           <MainCard
             imageSrc={automate}

@@ -34,6 +34,11 @@
             @include positioningContent(flex-end, center);
             .extra-rectangle{
                 @include extra-rectangle($color-primary-white);
+                .second-section-heading{
+                    padding-top: 2rem;
+                    display: none;
+                }
+
             }
         }
         @include responsive(phone){
@@ -41,6 +46,9 @@
             &--right{
                 .extra-rectangle{
                     width: 85%;
+                    .second-section-heading{
+                        display: block;
+                    }
                 }
             }
         }

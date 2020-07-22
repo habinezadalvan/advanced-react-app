@@ -8,6 +8,8 @@ import FifthSection from './fifthSection';
 import SixthSection from './sixthSection';
 import Footer from './footer';
 import Box from './boxsection/Box';
+import Heading from './common/Heading';
+import FreeSpace from './freeSpace';
 
 
 const LandingPage = ({referance, inView, entry}) => {
@@ -16,6 +18,9 @@ const LandingPage = ({referance, inView, entry}) => {
          <Header />
          <FirstSection />
          <SecondSection />
+         <FreeSpace>
+            <Heading text1="how we do" text2="what we do" />
+         </FreeSpace>
          <ThirdSection />
          <FourthSection referance={referance} inView={inView} entry={entry} />
          <Box />

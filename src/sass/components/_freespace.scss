@@ -1,0 +1,13 @@
+.free-section{
+    @include sectionPadding(column);
+    padding: 0rem 10rem;
+    
+    &__left{
+        flex-basis: 50%;
+    }
+
+    &__right{
+        flex-basis: 50%;
+    }
+}
+

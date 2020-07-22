@@ -62,7 +62,7 @@
 @mixin sectionPadding($direction) {
     display: flex;
     padding: 9rem 10rem 1rem;
-    background-color: #fff;
+    // background-color: #fff;
     &--left{
         flex-basis: 50%;
       
