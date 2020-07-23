@@ -1,15 +1,40 @@
 .second-section{
     @include sectionPadding (column-reverse);
-    border: 2px solid red;
     &--left{
+        .content{
+            text-align: center;
+            font-size: 2.3rem;
+            color: $color-secondary-dark-gray;
+            margin-top: 2rem;
+            @include responsive(phone){
+                margin-top: 0rem;
+            }
+        }
+        p{
+            padding: 2rem;
+        }
     }
     &--right{
+        padding-bottom: 2rem;
+        img{
+            height: 60rem;
+            @include responsive(tab-port){
+                height: 38rem;
+            }
+           
+        }
+
+        @include responsive(phone){
+            padding-bottom: 0rem;
+           }
     }
 
     @include responsive(tab-land){
 
     }
     @include responsive(phone){
-
+        &__heading{
+            display: none;
+        }
     }
 }

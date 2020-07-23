@@ -34,7 +34,6 @@
     }
 
     @include responsive(phone){
-        // flex-direction: column;
         display: none;
     }
 }
