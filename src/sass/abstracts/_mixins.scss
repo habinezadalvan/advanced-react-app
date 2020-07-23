@@ -63,10 +63,17 @@
 }
 
 
+@mixin positionObsoluteTop {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 @mixin sectionPadding($direction) {
     display: flex;
     padding: 9rem 10rem 1rem;
-    // background-color: #fff;
     &--left{
         flex-basis: 50%;
       

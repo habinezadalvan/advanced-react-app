@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__free-space">
-      <p>&copy;Digito 2020</p>
+      <p>&copy;Digitol 2020</p>
       </div>
     </div>
   );
