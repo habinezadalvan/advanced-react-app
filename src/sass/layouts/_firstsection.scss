@@ -160,6 +160,10 @@
     z-index: 99;
     width: 40%;
     animation: moveInLeft 1s ease-in-out;
+    @include responsive(tab-port){
+        bottom: 2rem;
+        right: 2rem;
+    }
   }
 
   .directing-btn{
@@ -171,5 +175,11 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+
+    @include responsive(tab-port){
+        bottom: 2rem;
+        right: 2rem;
+    }
   }
+
 }

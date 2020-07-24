@@ -939,6 +939,10 @@ body {
     z-index: 99;
     width: 40%;
     animation: moveInLeft 1s ease-in-out; }
+    @media (max-width: 56.25em) {
+      .first-section .fixed-get-started {
+        bottom: 2rem;
+        right: 2rem; } }
   .first-section .directing-btn {
     position: fixed;
     bottom: 5rem;
@@ -948,6 +952,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end; }
+    @media (max-width: 56.25em) {
+      .first-section .directing-btn {
+        bottom: 2rem;
+        right: 2rem; } }
 
 .fifth-section {
   display: flex;
