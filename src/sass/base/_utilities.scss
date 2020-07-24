@@ -4,7 +4,9 @@
        display: block;
    }
 }
-
+.hide{
+    display: none;
+  }
 .phone-invisible{
     display: block;
    @include responsive(phone){

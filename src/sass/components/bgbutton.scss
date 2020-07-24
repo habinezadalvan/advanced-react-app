@@ -25,3 +25,18 @@
                 width: 26rem;
             }
         }
+
+.small-btn{
+    @extend .bg-btn;
+    height: 5rem;
+    width: 20rem;
+    background-color: $color-primary-dark-blue;
+    p{
+        font-size: 2rem;
+    }
+    &:hover{
+        background-color: $color-primary-light-blue;
+        border: 3px solid $color-primary-light-blue;
+    }
+}
+

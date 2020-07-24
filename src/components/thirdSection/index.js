@@ -17,7 +17,7 @@ import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 const ThirdSection = () => {
   return (
-    <div className="third-section">
+    <div className="third-section" id="section-three">
       <div className="third-section--left">
         <div className="third-section--left__container">
           <MainCard

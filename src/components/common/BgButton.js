@@ -6,9 +6,11 @@ import AngleIcon from '../common/AngleIcon';
 
 const BgButton = ({classname}) => {
     return(
-        <button className={classname}>
+        <button className={classname} >
         <p>Reach us</p> 
-        <AngleIcon iconName= {faAngleRight} hreference="/more"/>
+        {classname === 'bg-btn' 
+        ?( <AngleIcon iconName= {faAngleRight} hreference="#message-us" classname="angle-icon"/>) 
+         : <AngleIcon iconName= {faAngleRight} hreference="#message-us" classname="angle-icon-small"/>}
     </button>
     )
 }

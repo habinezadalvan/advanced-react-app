@@ -2,8 +2,8 @@ import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 
-const AngleIcon = ({iconName, hreference, direction}) => (
-    <div className="angle-icon" onClick= {direction}>
+const AngleIcon = ({iconName, hreference, direction, classname}) => (
+    <div className={classname} onClick= {direction}>
         <a href={hreference}>
           <FontAwesomeIcon icon={iconName} />
         </a>

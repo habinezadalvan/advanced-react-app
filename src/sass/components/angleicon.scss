@@ -4,17 +4,30 @@
     border-radius: 5rem;
     font-size: 2.5rem;
     @include positioningContent(center, center);
-    margin-left: 2rem;
-    color: white;
+    color: $color-primary-white;
     z-index: 8;
     background-color: $color-primary-dark-blue;
     a,
     :link,
     :visited{
-        color: white;
+        margin-left: .3rem;
+        color: $color-primary-white;
         font-size: 3rem;
-        // height: 5rem;
         font-weight: 300;
 
+    }
+}
+
+
+.angle-icon-small{
+    @extend .angle-icon;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: $color-primary-white;
+    a,
+    :link,
+    :visited{
+        color: $color-primary-dark-blue;
+        font-size: 2.5rem;
     }
 }

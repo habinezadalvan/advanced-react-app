@@ -13,7 +13,7 @@ class SendMessage extends Component {
   }
   render() {
     return (
-      <div className="message-us">
+      <div className="message-us" id="message-us">
         <h1>Message us</h1>
         <form onSubmit={this.onFormSubmit}>
           <FormIput

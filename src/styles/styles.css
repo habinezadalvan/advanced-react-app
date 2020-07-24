@@ -93,8 +93,19 @@
     left: 45%;
     top: 75%; } }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -124,6 +135,9 @@ body {
   @media (max-width: 37.5em) {
     .invisible {
       display: block; } }
+
+.hide {
+  display: none; }
 
 .phone-invisible {
   display: block; }
@@ -217,7 +231,7 @@ body {
   transition: all .2s;
   animation: moveInBottomShort 2s forwards ease-out; }
 
-.angle-icon {
+.angle-icon, .angle-icon-small {
   height: 5rem;
   width: 5rem;
   border-radius: 5rem;
@@ -225,16 +239,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 2rem;
-  color: white;
+  color: #FFFFFF;
   z-index: 8;
   background-color: #0570c1; }
-  .angle-icon a,
+  .angle-icon a, .angle-icon-small a,
   .angle-icon :link,
-  .angle-icon :visited {
-    color: white;
+  .angle-icon-small :link,
+  .angle-icon :visited,
+  .angle-icon-small :visited {
+    margin-left: .3rem;
+    color: #FFFFFF;
     font-size: 3rem;
     font-weight: 300; }
+
+.angle-icon-small {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #FFFFFF; }
+  .angle-icon-small a,
+  .angle-icon-small :link,
+  .angle-icon-small :visited {
+    color: #0570c1;
+    font-size: 2.5rem; }
 
 .arrow {
   width: 100%;
@@ -343,7 +369,7 @@ body {
     .pointing-up-arrow {
       left: 72%; } }
 
-.bg-btn {
+.bg-btn, .small-btn {
   cursor: pointer;
   height: 8rem;
   width: 28rem;
@@ -354,17 +380,27 @@ body {
   background: transparent;
   color: white;
   outline: none; }
-  .bg-btn p {
+  .bg-btn p, .small-btn p {
     flex-basis: 70%;
     font-size: 3rem; }
-  .bg-btn:hover {
+  .bg-btn:hover, .small-btn:hover {
     background-color: #0570c1; }
-    .bg-btn:hover .angle-icon {
+    .bg-btn:hover .angle-icon, .small-btn:hover .angle-icon, .bg-btn:hover .angle-icon-small, .small-btn:hover .angle-icon-small {
       border: 3px solid #FFFFFF; }
   @media (max-width: 75em) {
-    .bg-btn {
+    .bg-btn, .small-btn {
       height: 7rem;
       width: 26rem; } }
+
+.small-btn {
+  height: 5rem;
+  width: 20rem;
+  background-color: #0570c1; }
+  .small-btn p {
+    font-size: 2rem; }
+  .small-btn:hover {
+    background-color: #048ffa;
+    border: 3px solid #048ffa; }
 
 .btn {
   height: 3.5rem;
@@ -896,6 +932,22 @@ body {
           width: 85%; }
           .first-section__free-space--right .extra-rectangle .second-section-heading {
             display: block; } }
+  .first-section .fixed-get-started {
+    position: fixed;
+    bottom: 5rem;
+    left: 5rem;
+    z-index: 99;
+    width: 40%;
+    animation: moveInLeft 1s ease-in-out; }
+  .first-section .directing-btn {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    z-index: 8;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
 
 .fifth-section {
   display: flex;
