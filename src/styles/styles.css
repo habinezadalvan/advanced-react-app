@@ -942,7 +942,7 @@ body {
     @media (max-width: 56.25em) {
       .first-section .fixed-get-started {
         bottom: 2rem;
-        right: 2rem; } }
+        left: 2rem; } }
   .first-section .directing-btn {
     position: fixed;
     bottom: 5rem;

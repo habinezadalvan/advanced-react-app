@@ -162,7 +162,7 @@
     animation: moveInLeft 1s ease-in-out;
     @include responsive(tab-port){
         bottom: 2rem;
-        right: 2rem;
+        left: 2rem;
     }
   }
 
