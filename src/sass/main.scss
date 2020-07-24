@@ -6,16 +6,21 @@
 @import './base/typography';
 @import './base/utilities';
 
+@import './components/angleicon.scss';
 @import './components/arrow';
+@import './components/bgbutton.scss';
 @import './components/button';
 @import './components/contact';
+@import './components/contentandbutton';
 @import './components/corevalue';
 @import './components/freespace';
 @import './components/logo';
 @import './components/maincard';
 @import './components/percentageCard';
+@import './components/smallvideo';
 @import './components/socialicon';
 @import './components/sendmessage';
+@import './components/videos';
 
 @import './layouts/box';
 @import './layouts/firstsection';

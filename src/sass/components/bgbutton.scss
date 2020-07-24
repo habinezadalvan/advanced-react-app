@@ -1,0 +1,27 @@
+.bg-btn{
+            cursor: pointer;
+            height: 8rem;
+            width: 28rem;
+            display: flex;
+            align-items: center;
+            border: 3px solid $color-primary-dark-blue;
+            border-radius: 1rem;
+            background: transparent;
+            color: white;
+            outline: none;
+            p{
+                flex-basis: 70%;
+                font-size: 3rem;
+            }
+            &:hover{
+                background-color: $color-primary-dark-blue;
+                .angle-icon{
+                    border: 3px solid $color-primary-white;
+                }
+            }
+
+            @include responsive(tab-land){
+                height: 7rem;
+                width: 26rem;
+            }
+        }

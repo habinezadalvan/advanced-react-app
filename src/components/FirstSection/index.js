@@ -4,6 +4,8 @@ import whitebox from '../../assets/images/white correct.png';
 import blackbox from '../../assets/images/box black png.png';
 import openkbox from '../../assets/images/Last box open.png';
 import {gsap} from 'gsap';
+import ContentAndBtn from "./ContentAndBtn";
+import Videos from "./Videos";
 
 const FirstSection = () => {
 const box1 = React.createRef();
@@ -52,11 +54,11 @@ const topbox = React.createRef();
     <div className="first-section">
       <div className="view">
       <div className="first-section__content">
-        <div className="first-section__content--left">FIRST SECTION LEFT</div>
+        <div className="first-section__content--left">
+          <ContentAndBtn />
+        </div>
         <div className="first-section__content--right">
-          <div className="first-section__videos">
-            FIRST SECTION RIGHT VIDOES AREA
-          </div>
+          <Videos />
         </div>
       </div>
       <div className="first-section__free-space">

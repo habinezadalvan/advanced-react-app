@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Button from "../common/Button";
+import SubmitButton from "../common/SubmitButton";
 import FormIput from "../common/FormInput";
 
 class SendMessage extends Component {
@@ -38,7 +38,7 @@ class SendMessage extends Component {
             name="message"
             onChange={this.onInputChange}
           />
-          <Button/>
+          <SubmitButton/>
         </form>
       </div>
     );

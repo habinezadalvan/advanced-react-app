@@ -14,13 +14,13 @@
         color: white;
         top: 0;
         left: 0;
-        font-family: $indie-flower;
+        // font-family: $indie-flower;
         font-size: 5rem;
         font-weight: bolder;
         text-align: center;
         @include positioningContent(center, center);
         @include responsive(tab-land){
-            font-size: 4rem;
+            font-size: 2rem;
             background-color: $color-primary-dark-blue;
             h1{
                 width: 80%;
