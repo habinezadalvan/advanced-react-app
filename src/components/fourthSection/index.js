@@ -1,9 +1,9 @@
 import React from "react";
 import Heading from "../common/Heading";
-import automate from '../../assets/images/automation.png';
-import softwaredev from '../../assets/images/coding.png';
-import graphicDesign from '../../assets/images/pen.png';
-import digitalmarketing from '../../assets/images/digital-marketing.png';
+import automate from '../../assets/images/automation-min.png';
+import softwaredev from '../../assets/images/coding-min.png';
+import graphicDesign from '../../assets/images/pen-min.png';
+import digitalmarketing from '../../assets/images/digital-marketing-min.png';
 import MainCard from "../common/MainCard";
 import WhatWeDoGraphic from "./WhatWeDoGraphic";
 const FourthSection = ({referance, inView, entry}) => {

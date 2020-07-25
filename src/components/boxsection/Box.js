@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import box from '../../assets/images/spread-box.png';
+import box from '../../assets/images/spread-box 09.05.45-min.png';
 
 
 const Box = () => {

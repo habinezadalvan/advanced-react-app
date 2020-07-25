@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/images/digito white logo.png'
+import logo from '../../assets/images/digito white logo-min.png';
 
 
 const Logo = () => {

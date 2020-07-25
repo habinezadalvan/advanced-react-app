@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import allappleproductsgif from '../../assets/images/appleproducts.gif';
-import screenshot from '../../assets/images/screenshot.png';
+import screenshot from '../../assets/images/screenshot-min.png';
 
 
 const WhatWeDoGraphic = ({referance, entry, inView}) => {

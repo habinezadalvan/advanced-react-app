@@ -1,8 +1,8 @@
 import React from "react";
-import covid19 from "../../assets/videos/covid19.mp4";
-import workinghome from "../../assets/videos/workinghome.mp4";
-import fingertyping from "../../assets/videos/findtyping.mp4";
-import mask from "../../assets/videos/mask.mp4";
+import covid19 from "../../assets/videos/covid19-2.webm";
+import workinghome from "../../assets/videos/workinghome.webm";
+import fingertyping from "../../assets/videos/findtyping.webm";
+import mask from "../../assets/videos/mask.webm";
 import Video from "./Video";
 
 

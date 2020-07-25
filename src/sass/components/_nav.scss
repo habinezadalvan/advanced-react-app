@@ -1,0 +1,56 @@
+.header__nav{
+    @include positioningContent(center, center);
+    flex-basis: 50%;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        list-style: none;
+        li{
+            padding: 1rem;
+            &a,
+            :link,
+            :visited{
+                text-decoration: none;
+                color: $color-gray-medium;
+                font-size: 1.4rem;
+            }
+          
+            
+            &:hover{
+                background-color: $color-primary-dark-blue;
+                border-radius: .5rem;
+                a{
+                    color: $color-primary-white;
+                }
+            }
+        }
+        @include responsive(phone){
+            display: none;
+        }
+    }
+
+    .bars-icon{
+            @include positioningContent(center, center);
+            padding: .7rem;
+            border-radius: 5rem;
+            height: 4rem;
+            width: 4rem;
+            background-color: $color-primary-dark-blue;
+            box-shadow: $box-shadow;
+            font-size: 2rem;
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            &:hover{
+            background-color: $color-primary-light-blue;
+            }
+            display: none;
+            @include responsive(phone){
+                display: flex;
+            }
+
+    }
+
+}

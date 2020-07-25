@@ -634,6 +634,54 @@ body {
     .product-delivery {
       top: -39%; } }
 
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%; }
+  .header__nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    list-style: none; }
+    .header__nav ul li {
+      padding: 1rem; }
+      .header__nav ul lia,
+      .header__nav ul li :link,
+      .header__nav ul li :visited {
+        text-decoration: none;
+        color: #C4C4C4;
+        font-size: 1.4rem; }
+      .header__nav ul li:hover {
+        background-color: #0570c1;
+        border-radius: .5rem; }
+        .header__nav ul li:hover a {
+          color: #FFFFFF; }
+    @media (max-width: 37.5em) {
+      .header__nav ul {
+        display: none; } }
+  .header__nav .bars-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .7rem;
+    border-radius: 5rem;
+    height: 4rem;
+    width: 4rem;
+    background-color: #0570c1;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: none; }
+    .header__nav .bars-icon:hover {
+      background-color: #048ffa; }
+    @media (max-width: 37.5em) {
+      .header__nav .bars-icon {
+        display: flex; } }
+
 .percentage-card-container {
   position: relative;
   width: 80%;
@@ -1090,13 +1138,23 @@ body {
 .header {
   height: 5rem;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.801);
   color: white;
   font-size: 1.8rem;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9; }
+  z-index: 9;
+  display: flex;
+  padding: 0rem 10rem; }
+  @media (max-width: 37.5em) {
+    .header {
+      padding: 0rem 5rem; } }
+  .header__main-container {
+    flex-basis: 50%; }
+  .header__logo {
+    height: 2.5rem;
+    width: 2.5rem; }
 
 .second-section {
   display: flex;

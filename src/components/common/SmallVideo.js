@@ -7,7 +7,7 @@ const SmallVideo = ({videosrc}) => (
       muted
       loop="loop"
     >
-      <source src={videosrc} type="video/mp4" />
+      <source src={videosrc} type="video/webm" />
       Your browser is not supported!
     </video>
 );

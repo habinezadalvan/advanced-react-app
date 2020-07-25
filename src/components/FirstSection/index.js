@@ -1,7 +1,7 @@
 import React from "react";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import Heading from "../common/Heading";
-import whitebox from "../../assets/images/white correct.png";
+import whitebox from "../../assets/images/white correct-min.png";
 import ContentAndBtn from "./ContentAndBtn";
 import Videos from "./Videos";
 import BgAnimation from "./BgAnimation";

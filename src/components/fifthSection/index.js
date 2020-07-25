@@ -4,7 +4,7 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import Heading from '../common/Heading';
 import CoreValue from './CoreValue';
 import PercentageCard from './PercentageCards';
-import animatedimage from '../../assets/images/boxside.png';
+import animatedimage from '../../assets/images/boxside-min.png';
 
 const FifthSection = () => {
 

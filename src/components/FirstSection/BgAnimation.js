@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import {gsap} from 'gsap';
-import whitebox from '../../assets/images/white correct.png';
-import blackbox from '../../assets/images/box black png.png';
-import openkbox from '../../assets/images/Last box open.png';
+import whitebox from '../../assets/images/white correct-min.png';
+import blackbox from '../../assets/images/box black png-min.png';
+import openkbox from '../../assets/images/Last box open-min.png';
 
 
 const BgAnimation = () => {
