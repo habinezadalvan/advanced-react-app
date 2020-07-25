@@ -1,6 +1,7 @@
 .logo-container{
     text-align: center;
     font-family: $sirin-stencil;
+    cursor: pointer;
     .logo{
         height: 80%;
         width: 80%;
@@ -9,5 +10,9 @@
         margin-top: -1rem;
         color: $color-primary-white;
         font-weight: $regular-weight;
+    }
+
+    @include responsive(phone){
+        margin-top: .5rem;
     }
 }

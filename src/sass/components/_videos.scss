@@ -25,7 +25,14 @@
         flex-basis: 50%;
         position: relative;
     }
+
+    @include responsive(tab-land){
+        margin-top: -30%;
+        width: 95%;
+        height: 35%;
+    }
     @include responsive(phone){
+        margin-top: 20%;
         width: 100%;
         height: 100%;
     }

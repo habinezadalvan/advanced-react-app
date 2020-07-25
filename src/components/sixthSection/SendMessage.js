@@ -8,6 +8,7 @@ class SendMessage extends Component {
     this.setState({ [name]: value });
   };
 
+
   onFormSubmit = (e) => {
     e.preventDefault();
   }

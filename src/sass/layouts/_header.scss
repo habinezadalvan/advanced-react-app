@@ -13,11 +13,9 @@
 
     @include responsive(phone){
     padding: 0rem 5rem;
-
-
     }
     &__main-container{
-        flex-basis: 50%;
+        flex-basis: 55%;
     }
     &__logo{
         height: 2.5rem;

@@ -39,7 +39,7 @@ const topbox = React.createRef();
     });
 
     gsap.from(box2Small.current, {
-      y: -10,
+      y: -7,
       duration: 20,
       scale: 6,
       ease:"bounce",

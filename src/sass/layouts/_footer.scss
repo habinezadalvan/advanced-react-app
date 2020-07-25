@@ -1,6 +1,6 @@
 .footer{
     background-color: $color-primary-light-black;
-    color: $color-primary-white;
+    color: $color-gray-opacity-50;
     padding: $medium-padding;
     font-size: 1.8rem;
     z-index: 99;
@@ -26,7 +26,7 @@
                 .line{
                     width: 1px;
                     height: 20rem;
-                    border: .8px solid $color-primary-white;
+                    border: .8px solid $color-gray-opacity-50;
                     margin-left: -4rem;
                 }
                 @include responsive(phone){
