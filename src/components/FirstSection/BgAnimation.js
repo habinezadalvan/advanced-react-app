@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react';
 import {gsap} from 'gsap';
-import whitebox from '../../assets/images/white correct-min.png';
-import blackbox from '../../assets/images/box black png-min.png';
-import openkbox from '../../assets/images/Last box open-min.png';
+import images from '../../assets/imageUrls';
 
 
 const BgAnimation = () => {
@@ -51,18 +49,18 @@ const topbox = React.createRef();
     return(
         <div className="bg-animations">
         <div className="top-div">
-          <img src={blackbox} alt="imagetop" ref={topbox}></img>
+          <img src={images.box_black} alt="imagetop" ref={topbox}></img>
         </div>
         <div className="lower-div"> 
             <div className="box-1">
-              <img src={blackbox} alt="whitebox" ref={box1}/>
+              <img src={images.box_black} alt="whitebox" ref={box1}/>
             </div>
             <div className="box-2">
-              <img src={openkbox} alt="openkbox" className="big-box"/>
-              <img src={whitebox} alt="whitebox" className="small-box" ref={box2Small}/>
+              <img src={images.last_box_open} alt="openkbox" className="big-box"/>
+              <img src={images.white_box} alt="whitebox" className="small-box" ref={box2Small}/>
             </div>
             <div className="box-3">
-              <img src={whitebox} alt="whitebox"  ref={box3}/>
+              <img src={images.white_box} alt="whitebox"  ref={box3}/>
             </div>
         </div>
       </div>

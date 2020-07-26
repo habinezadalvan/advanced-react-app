@@ -3,7 +3,7 @@ import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import Heading from "../common/Heading";
-import whitebox from "../../assets/images/white correct-min.png";
+import images from "../../assets/imageUrls";
 import ContentAndBtn from "./ContentAndBtn";
 import Videos from "./Videos";
 import BgAnimation from "./BgAnimation";
@@ -13,7 +13,7 @@ import {scrollToTop} from '../../vanillajs/index';
 
 const FirstSection = () => {
   return (
-    <div className="first-section">
+    <div className="first-section" id="home">
       <div className="view">
         <div className="first-section__content">
           <div className="first-section__content--left">
@@ -37,7 +37,7 @@ const FirstSection = () => {
       <BgAnimation />
       <div className="first-section__model"></div>
       <div className="moving-box">
-        <img src={whitebox} alt="whitebox" />
+        <img src={images.white_box} alt="whitebox" />
       </div>
       <div className="fixed-get-started hide" id="reach-us">
         <BgButton classname="small-btn" />

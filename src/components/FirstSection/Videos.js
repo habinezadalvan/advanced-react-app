@@ -1,18 +1,15 @@
 import React from "react";
-import covid19 from "../../assets/videos/covid1-19-2.webm";
-import workinghome from "../../assets/videos/workinghome2.webm";
-import fingertyping from "../../assets/videos/findtyping2.webm";
-import mask from "../../assets/videos/mask2.webm";
+import videos from "../../assets/videosUrls";
 import Video from "./Video";
 
 
 const Videos = () => {
   return (
     <div className="videos">
-        <Video text="LIVE" video={workinghome}/>
-        <Video text="DIGITAL" video={covid19}/>
-        <Video text="WITH" video={mask}/>
-        <Video text="US" video={fingertyping}/>
+        <Video text="LIVE" video={videos.workinghome}/>
+        <Video text="DIGITAL" video={videos.codiv19}/>
+        <Video text="WITH" video={videos.mask}/>
+        <Video text="US" video={videos.fingerTyping}/>
     </div>
   );
 };

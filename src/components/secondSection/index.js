@@ -2,7 +2,8 @@ import React, {useEffect} from "react";
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import Heading from "../common/Heading";
-import image from '../../assets/images/project chriss one-min.png';
+
+import images from '../../assets/imageUrls';
 
 const SecondSection = () => {
   const team = React.createRef();
@@ -30,7 +31,7 @@ const SecondSection = () => {
         </div>
       </div>
       <div className="second-section--right">
-        <img ref={team} src={image} alt="teamimage"/>
+        <img ref={team} src={images.team} alt="teamimage"/>
       </div>
     </div>
   );

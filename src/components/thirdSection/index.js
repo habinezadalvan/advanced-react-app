@@ -1,16 +1,6 @@
 import React from "react";
 import MainCard from "../common/MainCard";
-import automate from "../../assets/images/automation-min.png";
-import analysis from "../../assets/images/analysis-min.png";
-import future from "../../assets/images/future-min.png";
-import together from "../../assets/images/together-min.png";
-import testing from "../../assets/images/lab-min.png";
-import features from "../../assets/images/feature-min.png";
-import share_updates from "../../assets/images/training-min.png";
-import review from "../../assets/images/review-min.png";
-import optimization from "../../assets/images/optimization-min.png";
-import code from "../../assets/images/code-min.png";
-import delivery from "../../assets/images/order-min.png";
+import images from "../../assets/imageUrls";
 import Arrow from "../common/Arrow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
@@ -21,17 +11,17 @@ const ThirdSection = () => {
       <div className="third-section--left">
         <div className="third-section--left__container">
           <MainCard
-            imageSrc={automate}
+            imageSrc={images.automation}
             text="Meet client"
             classname="small-main-card"
           />
           <MainCard
-            imageSrc={analysis}
+            imageSrc={images.analysis}
             text="Analysing needs"
             classname="small-main-card"
           />
           <MainCard
-            imageSrc={future}
+            imageSrc={images.future}
             text="Planning & system design"
             classname="small-main-card"
           />
@@ -44,7 +34,7 @@ const ThirdSection = () => {
         <div className="main">
           <div className="internal-cards-container">
             <MainCard
-              imageSrc={together}
+              imageSrc={images.together}
               text="Development process"
               classname="middle-card"
             />
@@ -52,17 +42,17 @@ const ThirdSection = () => {
         </div>
         <div className="external-card">
           <MainCard
-            imageSrc={code}
+            imageSrc={images.code}
             text="Write code"
             classname="write-code"
           />
-          <MainCard imageSrc={testing} text="Testing" classname="testing" />
+          <MainCard imageSrc={images.lab} text="Testing" classname="testing" />
 
-          <MainCard imageSrc={features} text="Features delivery" classname="features-delivery" />
-          <MainCard imageSrc={share_updates} text="Share updates to our client" classname="share-updates" />
-          <MainCard imageSrc={optimization} text="Optimization" classname="optimization" />
-          <MainCard imageSrc={review} text="Client feedback" classname="client-feedback" />
-          <MainCard imageSrc={delivery} text="Product delivery" classname="product-delivery" />
+          <MainCard imageSrc={images.feature} text="Features delivery" classname="features-delivery" />
+          <MainCard imageSrc={images.training} text="Share updates to our client" classname="share-updates" />
+          <MainCard imageSrc={images.optimization} text="Optimization" classname="optimization" />
+          <MainCard imageSrc={images.review} text="Client feedback" classname="client-feedback" />
+          <MainCard imageSrc={images.order} text="Product delivery" classname="product-delivery" />
 
           <div className="pointing-up-arrow">
               <div><FontAwesomeIcon icon={faAngleUp}/></div>

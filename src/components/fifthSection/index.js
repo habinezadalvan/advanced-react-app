@@ -4,7 +4,7 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import Heading from '../common/Heading';
 import CoreValue from './CoreValue';
 import PercentageCard from './PercentageCards';
-import animatedimage from '../../assets/images/boxside-min.png';
+import images from '../../assets/imageUrls';
 
 const FifthSection = () => {
 
@@ -42,7 +42,7 @@ const FifthSection = () => {
                 <CoreValue letter="E" coreValue="Excellence" text={excellence}/>
             </div>
             <div className="animated-box">
-                <img ref={imgRef} src={animatedimage} alt="animatedimage"/>
+                <img ref={imgRef} src={images.boxside} alt="animatedimage"/>
             </div>
         </div>
     </div>
