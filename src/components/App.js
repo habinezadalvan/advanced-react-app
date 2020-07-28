@@ -18,7 +18,6 @@ const App = () => {
       <Router>
         <LandingPage path="/" referance={ref} inView={inView} entry={entry} />
         <Team path="team"/>
-        
         <OurProcess path ='process/:processId'/>
       </Router>
       <Footer />

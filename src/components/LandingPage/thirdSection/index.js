@@ -9,12 +9,11 @@ import { Link } from "@reach/router";
 
 class ThirdSection extends React.Component {
   renderFirstThreeSteps = () => {
-    console.log("this.props", this.props.steps);
     const firstThreeSteps = this.props.steps.slice(0, 3);
     return firstThreeSteps.map((process) => {
       return (
         <div key={process.id}>
-          <Link to={`process/${process.id}`}>
+          <Link className="link" to={`/process/${process.id}`}>
             <MainCard
               imageSrc={process.icon}
               text={process.title}
@@ -33,7 +32,7 @@ class ThirdSection extends React.Component {
     return otherSteps.map((process) => {
       return (
         <div key={process.id}>
-          <Link to={`process/${process.id}`}>
+          <Link className="link" to={`/process/${process.id}`}>
             <MainCard
               imageSrc={process.icon}
               text={process.title}
@@ -50,21 +49,6 @@ class ThirdSection extends React.Component {
         <div className="third-section--left">
           <div className="third-section--left__container">
             {this.renderFirstThreeSteps()}
-            {/* <MainCard
-              imageSrc={images.group}
-              text="Meet client"
-              classname="small-main-card"
-            />
-            <MainCard
-              imageSrc={images.analysis}
-              text="Analysing needs"
-              classname="small-main-card"
-            />
-            <MainCard
-              imageSrc={images.future}
-              text="Planning & system design"
-              classname="small-main-card"
-            /> */}
           </div>
           <div>
             <Arrow />
@@ -73,7 +57,7 @@ class ThirdSection extends React.Component {
         <div className="third-section--right">
           <div className="main">
             <div className="internal-cards-container">
-              <Link to="process/1">
+              <Link className="link" to="process/1">
                 <MainCard
                   imageSrc={images.together}
                   text="Development process"
@@ -84,44 +68,6 @@ class ThirdSection extends React.Component {
           </div>
           <div className="external-card">
             {this.renderOtherSteps()}
-
-            {/* <MainCard
-              imageSrc={images.code}
-              text="Write code"
-              classname="write-code"
-            />
-            <MainCard
-              imageSrc={images.lab}
-              text="Testing"
-              classname="testing"
-            />
-
-            <MainCard
-              imageSrc={images.feature}
-              text="Features delivery"
-              classname="features-delivery"
-            />
-            <MainCard
-              imageSrc={images.training}
-              text="Share updates to our client"
-              classname="share-updates"
-            />
-            <MainCard
-              imageSrc={images.optimization}
-              text="Optimization"
-              classname="optimization"
-            />
-            <MainCard
-              imageSrc={images.review}
-              text="Client feedback"
-              classname="client-feedback"
-            />
-            <MainCard
-              imageSrc={images.order}
-              text="Product delivery"
-              classname="product-delivery"
-            /> */}
-
             <div className="pointing-up-arrow">
               <div>
                 <FontAwesomeIcon icon={faAngleUp} />
@@ -136,7 +82,6 @@ class ThirdSection extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  // console.log("state", state);
   return state;
 };
 export default connect(mapStateToProps)(ThirdSection);

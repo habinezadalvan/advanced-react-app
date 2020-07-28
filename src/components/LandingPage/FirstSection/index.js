@@ -1,7 +1,5 @@
 import React from "react";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBars} from '@fortawesome/free-solid-svg-icons';
 import Heading from "../../common/Heading";
 import images from "../../../assets/imageUrls";
 import ContentAndBtn from "./ContentAndBtn";
@@ -47,9 +45,6 @@ const FirstSection = () => {
       </div>
       <div className="directing-btn invisible" id="up">
         <AngleIcon iconName= {faAngleUp} classname="angle-icon" direction={scrollToTop}/>
-      </div>
-      <div className="bars-icon">
-          <FontAwesomeIcon icon={faBars}/>
       </div>
     </div>
   );

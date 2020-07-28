@@ -3,20 +3,21 @@ import {connect} from 'react-redux';
 import ExtraRectangle from "../LandingPage/sixthSection/ExtraRectangle";
 import images from '../../assets/imageUrls';
 import { useParams } from "@reach/router";
-import {findProcess} from '../../actions'
+import {findProcess} from '../../actions';
+
+
+
 
 const ProcessDetail = (props) => {
  const params = useParams();
 
  useEffect(() => {
-    console.log('props', props);
     props.findProcess(Number(params.processId));
- }, []);
+ }, [Number(params.processId)]);
 
   return (
     <div className="our-process__content">
     <div className="left-section">
-        {console.log('props.process[0]', props.process && props.process[0])}
         <h1>HOW WE DO WHAT WE DO</h1>
         <div className="process-bg-img">
             <img src={(props.process && props.process[0].image) || images.team} alt="title"/>

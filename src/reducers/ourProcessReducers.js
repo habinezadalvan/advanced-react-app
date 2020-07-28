@@ -6,12 +6,12 @@ export const processStepsReducer = () => {
 }
 
 
-export const selectProcessReducer = (step = null, action) => {
-    if (action.type === actionTypes.selectedProcess){
-        return action.payload;
-    }
-    return step
-}
+// export const selectProcessReducer = (step = null, action) => {
+//     if (action.type === actionTypes.selectedProcess){
+//         return action.payload;
+//     }
+//     return step
+// }
 
 export const findProcessReducer = (process = null, action) =>{
     if(action.type === actionTypes.findProcess) {

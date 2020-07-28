@@ -4,6 +4,10 @@
        display: block;
    }
 }
+.active{
+    border-right: 3rem solid black;
+    text-decoration: none;
+}
 .hide{
     display: none;
   }
@@ -85,6 +89,7 @@
     @include extra-rectangle($color-secondary-dark-gray);
     width: 90%;
     @include positioningContent(center, center);
+    padding-top: 1rem;
     .social-icons-container{
         width: 60%;
         @include positioningContent(center, center);
@@ -102,12 +107,25 @@
     padding: 1rem 3rem;
     z-index: 90;
     @include positioningContent(center, flex-start);
+
+    @include responsive(tab-port){
+        height: 6vh;
+        margin-top: 2rem;
+    }
+    @include responsive(phone){
+        // height: 6vh;
+        // margin-top: 2rem;
+    }
     &__link{
-        // margin-right: 0rem;
         @include positioningContent(center, flex-start);
         width: 13rem;
         font-size: 1.3rem;
         cursor: pointer;
+        &:hover{
+            p{
+                color: $color-primary-dark-blue;
+            }
+        }
         .icon{
             margin-right: .5rem;
             padding: .2rem;
@@ -118,12 +136,19 @@
 
         }
 
-        @include responsive(phone){
-            // width: 10rem;
+        @include responsive(tab-port){
+            display: none;
         }
-        // border: 1px solid red;
     }
+   
 }
+
+.link,
+:visited,
+:focus{
+    text-decoration: none;
+}
+
 // zooming and displaying animations
 .zoom-in-animation{
     @include animation(zoomIn);

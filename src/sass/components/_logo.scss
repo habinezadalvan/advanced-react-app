@@ -12,7 +12,7 @@
         font-weight: $regular-weight;
     }
 
-    @include responsive(phone){
+    @include responsive(tab-port){
         margin-top: 1.5rem;
     }
 }

@@ -23,7 +23,7 @@ body{
     box-sizing: border-box;
     font-family: $base-font;
     p{
-      color: $color-gray-opacity-80;
+      color: rgba($color: $color-gray-opacity-40, $alpha: 1.0);
     }
 }
 
