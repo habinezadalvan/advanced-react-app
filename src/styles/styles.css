@@ -427,7 +427,8 @@ body {
   outline: none; }
   .bg-btn p, .small-btn p {
     flex-basis: 70%;
-    font-size: 3rem; }
+    font-size: 3rem;
+    color: white; }
   .bg-btn:hover, .small-btn:hover {
     background-color: #0570c1; }
     .bg-btn:hover .angle-icon, .small-btn:hover .angle-icon, .bg-btn:hover .angle-icon-small, .small-btn:hover .angle-icon-small {
@@ -1242,11 +1243,12 @@ body {
     font-size: 1.8rem;
     font-weight: 300;
     margin: 2rem auto;
-    width: 60%;
+    width: 70%;
     color: rgba(128, 128, 128, 0.8); }
     @media (max-width: 37.5em) {
       .second-section--left .content {
-        margin-top: 0rem; } }
+        margin-top: 0rem;
+        width: 80%; } }
   .second-section--left p {
     padding: 2rem;
     line-height: 3rem; }
@@ -1460,10 +1462,10 @@ body {
             transform: scale(0.9); }
         @media (max-width: 37.5em) {
           .our-process__content .right-section .upper-part {
-            height: 50vh;
+            height: 70vh;
             padding: 5rem; }
             .our-process__content .right-section .upper-part p {
-              width: 80%; } }
+              width: 100%; } }
       .our-process__content .right-section .lower-part {
         display: flex;
         align-items: flex-end;
@@ -1506,6 +1508,11 @@ body {
         .our-process__content .design-button {
           width: 30%;
           top: 45%; } }
+      @media (max-width: 37.5em) {
+        .our-process__content .design-button {
+          width: 50%;
+          top: 33%;
+          left: 25%; } }
 
 body {
   background-color: #FFFFFF; }
