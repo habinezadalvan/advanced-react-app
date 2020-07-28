@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import Heading from '../common/Heading';
+import Heading from '../../common/Heading';
 import CoreValue from './CoreValue';
 import PercentageCard from './PercentageCards';
-import images from '../../assets/imageUrls';
+import images from '../../../assets/imageUrls';
 
 const FifthSection = () => {
 

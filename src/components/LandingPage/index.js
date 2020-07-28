@@ -1,21 +1,18 @@
 import React from 'react';
-import Header from './header';
 import FirstSection from './FirstSection';
 import SecondSection from './secondSection';
 import ThirdSection from './thirdSection';
 import FourthSection from './fourthSection';
 import FifthSection from './fifthSection';
 import SixthSection from './sixthSection';
-import Footer from './footer';
 import Box from './boxsection/Box';
-import Heading from './common/Heading';
+import Heading from '../common/Heading';
 import FreeSpace from './freeSpace';
 
 
 const LandingPage = ({referance, inView, entry}) => {
     return (
         <div className="home-page">
-         <Header />
          <FirstSection />
          <SecondSection />
          <FreeSpace>
@@ -26,7 +23,6 @@ const LandingPage = ({referance, inView, entry}) => {
          <Box />
          <FifthSection />
          <SixthSection />
-         <Footer/>
         </div>
     )
 }

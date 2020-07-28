@@ -2,14 +2,14 @@ import React from "react";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
-import Heading from "../common/Heading";
-import images from "../../assets/imageUrls";
+import Heading from "../../common/Heading";
+import images from "../../../assets/imageUrls";
 import ContentAndBtn from "./ContentAndBtn";
 import Videos from "./Videos";
 import BgAnimation from "./BgAnimation";
-import BgButton from "../common/BgButton";
-import AngleIcon from "../common/AngleIcon";
-import {scrollToTop} from '../../vanillajs/index';
+import BgButton from "../../common/BgButton";
+import AngleIcon from "../../common/AngleIcon";
+import {scrollToTop} from '../../../vanillajs/index';
 
 const FirstSection = () => {
   return (

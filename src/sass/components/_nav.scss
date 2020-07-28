@@ -6,8 +6,15 @@
         justify-content: space-around;
         text-transform: uppercase;
         list-style: none;
+
+        .link{
+            text-decoration: none;
+        }
         li{
             padding: 1rem;
+            color: $color-gray-medium;
+            font-size: 1.4rem;
+            list-style: none;
             &a,
             :link,
             :visited{
@@ -15,13 +22,12 @@
                 color: $color-gray-medium;
                 font-size: 1.4rem;
             }
-          
-            
             &:hover{
                 background-color: $color-primary-dark-blue;
                 border-radius: .5rem;
-                a{
-                    color: $color-primary-white;
+                color: $color-primary-white;
+                a {
+                  color: $color-primary-white;
                 }
             }
         }

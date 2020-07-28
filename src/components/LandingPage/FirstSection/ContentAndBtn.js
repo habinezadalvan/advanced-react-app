@@ -1,5 +1,5 @@
 import React from 'react';
-import BgButton from '../common/BgButton';
+import BgButton from '../../common/BgButton';
 
 const ContentAndBtn = () => {
     return(

@@ -70,16 +70,6 @@
     &__free-space{
         padding: 1rem;
         text-align: center;
-        // display: flex;
-        // &--left{
-        //     flex-basis: $half-flex-basis;
-        // }
-        // &--right{
-        //     flex-basis: $half-flex-basis;
-        //     @include positioningContent(center, center);
-        // }
-        // @include responsive(phone){
-        //     flex-direction: column;
-        // }
+
     }
 }

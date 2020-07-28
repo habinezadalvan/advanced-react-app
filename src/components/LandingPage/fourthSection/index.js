@@ -1,7 +1,7 @@
 import React from "react";
-import Heading from "../common/Heading";
-import images from '../../assets/imageUrls';
-import MainCard from "../common/MainCard";
+import Heading from "../../common/Heading";
+import images from '../../../assets/imageUrls';
+import MainCard from "../../common/MainCard";
 import WhatWeDoGraphic from "./WhatWeDoGraphic";
 const FourthSection = ({referance, inView, entry}) => {
  

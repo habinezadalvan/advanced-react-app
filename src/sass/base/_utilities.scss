@@ -81,6 +81,49 @@
     @extend .big-main-card;
 }
 
+.extra-rectangle{
+    @include extra-rectangle($color-secondary-dark-gray);
+    width: 90%;
+    @include positioningContent(center, center);
+    .social-icons-container{
+        width: 60%;
+        @include positioningContent(center, center);
+        justify-content: space-around;
+    }
+}
+
+.sub-header{
+    height: 7vh;
+    width: 100%;
+    background-color: $color-primary-white;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    padding: 1rem 3rem;
+    z-index: 90;
+    @include positioningContent(center, flex-start);
+    &__link{
+        // margin-right: 0rem;
+        @include positioningContent(center, flex-start);
+        width: 13rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        .icon{
+            margin-right: .5rem;
+            padding: .2rem;
+           img{
+            height: 2.2rem;
+            width: 2.2rem;
+           }
+
+        }
+
+        @include responsive(phone){
+            // width: 10rem;
+        }
+        // border: 1px solid red;
+    }
+}
 // zooming and displaying animations
 .zoom-in-animation{
     @include animation(zoomIn);

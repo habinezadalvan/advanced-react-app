@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
-import Heading from "../common/Heading";
+import Heading from "../../common/Heading";
 
-import images from '../../assets/imageUrls';
+import images from '../../../assets/imageUrls';
 
 const SecondSection = () => {
   const team = React.createRef();
@@ -26,8 +26,8 @@ const SecondSection = () => {
       <div className="second-section--left">
         <div className="second-section__heading"><Heading text1="Why we do" text2="What we do"/></div>
         <div className="content">
-            <p>We want to support campanies, institurions, and individuals with amazing and quality products and services but with less visibility and accessibility. </p>
-            <p>Our purpose is to serve you selflessly and make you business grow tremendously.</p>
+            <p>We want to support campanies, institutions, and individuals with amazing and quality products and services but with less visibility and accessibility. </p>
+            <p>Our purpose is to serve you selflessly and make your business grow tremendously.</p>
         </div>
       </div>
       <div className="second-section--right">

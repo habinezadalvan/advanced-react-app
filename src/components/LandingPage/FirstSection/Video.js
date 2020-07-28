@@ -1,5 +1,5 @@
 import React from 'react';
-import SmallVideo from "../common/SmallVideo";
+import SmallVideo from "../../common/SmallVideo";
 
 const Video = ({video, text}) => {
     return(

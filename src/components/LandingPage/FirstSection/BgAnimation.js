@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {gsap} from 'gsap';
-import images from '../../assets/imageUrls';
+import images from '../../../assets/imageUrls';
 
 
 const BgAnimation = () => {

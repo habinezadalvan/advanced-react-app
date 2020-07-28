@@ -12,6 +12,7 @@
     padding: 0rem 10rem;
 
     @include responsive(phone){
+    height: 7rem;
     padding: 0rem 5rem;
     }
     &__main-container{

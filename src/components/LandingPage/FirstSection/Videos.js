@@ -1,5 +1,5 @@
 import React from "react";
-import videos from "../../assets/videosUrls";
+import videos from "../../../assets/videosUrls";
 import Video from "./Video";
 
 

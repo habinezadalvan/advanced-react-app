@@ -5,16 +5,16 @@
     }
     &--right{
         @include positioningContent(flex-end, flex-end);
-        .extra-rectangle{
-            @include extra-rectangle($color-secondary-dark-gray);
-            width: 90%;
-            @include positioningContent(center, center);
-            .social-icons-container{
-                width: 60%;
-                @include positioningContent(center, center);
-                justify-content: space-around;
-            }
-        }
+        // .extra-rectangle{
+        //     @include extra-rectangle($color-secondary-dark-gray);
+        //     width: 90%;
+        //     @include positioningContent(center, center);
+        //     .social-icons-container{
+        //         width: 60%;
+        //         @include positioningContent(center, center);
+        //         justify-content: space-around;
+        //     }
+        // }
 
     }
     @include responsive(phone){

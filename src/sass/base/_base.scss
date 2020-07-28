@@ -22,6 +22,9 @@ html{
 body{
     box-sizing: border-box;
     font-family: $base-font;
+    p{
+      color: $color-gray-opacity-80;
+    }
 }
 
 *,

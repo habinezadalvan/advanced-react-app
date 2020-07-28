@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SubmitButton from "../common/SubmitButton";
-import FormIput from "../common/FormInput";
+import SubmitButton from "../../common/SubmitButton";
+import FormIput from "../../common/FormInput";
 
 class SendMessage extends Component {
   state = { email: "", subject: '', message: ''};
