@@ -2,17 +2,17 @@
     text-align: center;
     font-family: $sirin-stencil;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .logo{
         height: 80%;
         width: 80%;
+        cursor: pointer;
     }
     p{
-        margin-top: -1rem;
+        margin-left: 1rem;
         color: $color-primary-white;
         font-weight: $regular-weight;
-    }
-
-    @include responsive(tab-port){
-        margin-top: 1.5rem;
     }
 }

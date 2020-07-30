@@ -1,14 +1,16 @@
-import React from 'react';
-import images from '../../assets/imageUrls';
-
+import React from "react";
+import images from "../../assets/imageUrls";
+import { Link } from "@reach/router";
 
 const Logo = () => {
-    return (
-        <div className="logo-container">
-            <img className="logo" src={images.digitol_white_logo} alt="logo"/>
-            <p>Digitol</p>
-        </div>
-    )
-}
+  return (
+    <Link to="/">
+      <div className="logo-container">
+        <img className="logo" src={images.digitol_white_logo} alt="logo" />
+        <p>Digitol</p>
+      </div>
+    </Link>
+  );
+};
 
 export default Logo;

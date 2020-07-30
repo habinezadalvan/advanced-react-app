@@ -1,5 +1,5 @@
 .header{
-    height: 5rem;
+    height: 8vh;
     width: 100%;
     background-color: $color-primary-opacity-80;
     color: white;
@@ -10,39 +10,13 @@
     z-index: 9;
     display: flex;
     padding: 0rem 10rem;
+    align-items: center;
+    // @include positioningContent(flex-end, center);
+
 
     @include responsive(tab-port){
-    height: 7rem;
-    padding: 0rem 5rem;
-    }
-    &__main-container{
-        flex-basis: 55%;
-    }
-    &__logo{
-        height: 2.5rem;
-        width: 2.5rem;
+    height: 8vh;
+    // padding: 0rem 5rem;
     }
 
-    // .bars-icon{
-    //     @include positioningContent(center, center);
-    //     padding: .7rem;
-    //     border-radius: 5rem;
-    //     height: 4rem;
-    //     width: 4rem;
-    //     background-color: $color-primary-dark-blue;
-    //     box-shadow: $box-shadow;
-    //     font-size: 2rem;
-    //     cursor: pointer;
-    //     position: fixed;
-    //     top: 1.5rem;
-    //     right: 2rem;
-    //     z-index: 999;
-    //     &:hover{
-    //     background-color: $color-primary-light-blue;
-    //     }
-    //     display: none;
-    //     @include responsive(tab-port){
-    //         display: flex;
-    //     }
-    // }
 }

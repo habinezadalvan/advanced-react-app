@@ -6,6 +6,7 @@ import Footer from "./footer";
 import Header from "./header";
 import Team from "./team";
 import OurProcess from "./process";
+import PageNotFound from "./notFound";
 
 const App = () => {
   const [ref, inView, entry] = useInView({
@@ -19,6 +20,7 @@ const App = () => {
         <LandingPage path="/" referance={ref} inView={inView} entry={entry} />
         <Team path="team"/>
         <OurProcess path ='process/:processId'/>
+        <PageNotFound default/>
       </Router>
       <Footer />
     </Fragment>

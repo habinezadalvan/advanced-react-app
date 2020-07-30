@@ -6,6 +6,9 @@
     @if $breakpoint == android-land {
         @media (max-width: 112.5em) {@content} //1800px
     };
+    @if $breakpoint == 1300 {
+        @media (max-width: 80.93em) {@content} //1300px
+    };
     @if $breakpoint == tab-land {
         @media (max-width: 75em) {@content} //1200px
     };

@@ -26,7 +26,6 @@ class ThirdSection extends React.Component {
   };
 
   renderOtherSteps = () => {
-    console.log("steps", this.props.steps.slice(3));
     const otherSteps = this.props.steps.slice(3);
 
     return otherSteps.map((process) => {
@@ -57,7 +56,7 @@ class ThirdSection extends React.Component {
         <div className="third-section--right">
           <div className="main">
             <div className="internal-cards-container">
-              <Link className="link" to="process/1">
+              <Link className="link" to="/process/1">
                 <MainCard
                   imageSrc={images.together}
                   text="Development process"

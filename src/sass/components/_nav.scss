@@ -32,6 +32,7 @@
             }
         }
         @include responsive(tab-port){
+            
             display: none;
         }
     }

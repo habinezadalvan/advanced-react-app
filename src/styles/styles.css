@@ -139,7 +139,7 @@ body {
       display: block; } }
 
 .active {
-  border-right: 3rem solid black;
+  border-bottom: 0.8rem solid #0570c1;
   text-decoration: none; }
 
 .hide {
@@ -228,17 +228,10 @@ body {
   width: 100%;
   background-color: #FFFFFF;
   position: fixed;
-  top: 5rem;
+  top: 8vh;
   left: 0;
   padding: 1rem 3rem;
-  z-index: 90;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; }
-  @media (max-width: 56.25em) {
-    .sub-header {
-      height: 6vh;
-      margin-top: 2rem; } }
+  z-index: 7; }
   .sub-header__link {
     display: flex;
     align-items: center;
@@ -254,9 +247,17 @@ body {
       .sub-header__link .icon img {
         height: 2.2rem;
         width: 2.2rem; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 80.93em) {
       .sub-header__link {
-        display: none; } }
+        padding: 1rem 3rem;
+        width: 50%; }
+        .sub-header__link p {
+          color: #fff;
+          font-weight: bold;
+          letter-spacing: .5px;
+          text-transform: uppercase; }
+        .sub-header__link:hover p {
+          color: #fff; } }
 
 .link,
 :visited,
@@ -433,7 +434,7 @@ body {
     .pointing-up-arrow {
       left: 72%; } }
 
-.bars-icon, .th-icon {
+.bars-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -450,16 +451,11 @@ body {
   right: 2rem;
   z-index: 999;
   display: none; }
-  .bars-icon:hover, .th-icon:hover {
-    background-color: #048ffa; }
+  .bars-icon:hover {
+    background-color: #048ffae3; }
   @media (max-width: 56.25em) {
-    .bars-icon, .th-icon {
+    .bars-icon {
       display: flex; } }
-
-.th-icon {
-  top: 8.3rem;
-  color: white;
-  background-color: rgba(128, 128, 128, 0.8); }
 
 .bg-btn, .small-btn {
   cursor: pointer;
@@ -492,8 +488,8 @@ body {
   .small-btn p {
     font-size: 2rem; }
   .small-btn:hover {
-    background-color: #048ffa;
-    border: 3px solid #048ffa; }
+    background-color: #048ffae3;
+    border: 3px solid #048ffae3; }
 
 .btn {
   height: 3.5rem;
@@ -509,7 +505,7 @@ body {
   outline: none;
   cursor: pointer; }
   .btn:hover {
-    background-color: #048ffa;
+    background-color: #048ffae3;
     font-weight: bold; }
 
 .contact {
@@ -589,17 +585,18 @@ body {
 .logo-container {
   text-align: center;
   font-family: "Sirin Stencil", cursive;
-  cursor: pointer; }
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .logo-container .logo {
     height: 80%;
-    width: 80%; }
+    width: 80%;
+    cursor: pointer; }
   .logo-container p {
-    margin-top: -1rem;
+    margin-left: 1rem;
     color: #FFFFFF;
     font-weight: 400; }
-  @media (max-width: 56.25em) {
-    .logo-container {
-      margin-top: 1.5rem; } }
 
 .small-main-card, .middle-card, .write-code, .testing, .features-delivery, .share-updates, .client-feedback, .optimization, .product-delivery {
   width: 12rem;
@@ -1226,7 +1223,7 @@ body {
       border-radius: 1rem; }
 
 .header {
-  height: 5rem;
+  height: 8vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.801);
   color: white;
@@ -1236,16 +1233,11 @@ body {
   left: 0;
   z-index: 9;
   display: flex;
-  padding: 0rem 10rem; }
+  padding: 0rem 10rem;
+  align-items: center; }
   @media (max-width: 56.25em) {
     .header {
-      height: 7rem;
-      padding: 0rem 5rem; } }
-  .header__main-container {
-    flex-basis: 55%; }
-  .header__logo {
-    height: 2.5rem;
-    width: 2.5rem; }
+      height: 8vh; } }
 
 .second-section {
   display: flex;

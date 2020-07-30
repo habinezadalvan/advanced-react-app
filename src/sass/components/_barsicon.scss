@@ -20,10 +20,3 @@
         display: flex;
     }
 }
-
-.th-icon {
-    @extend .bars-icon;
-    top: 8.3rem;
-    color: white;
-    background-color: $color-gray-opacity-80;
-}

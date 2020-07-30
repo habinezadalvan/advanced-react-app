@@ -18,25 +18,15 @@ const ExactNavLink = (props) => (
 
 class OurProcess extends React.Component {
 
-  
-  componentDidMount(){
-    console.log('did mount =====')
-  }
-  componentDidUpdate(){
-    console.log('did update ---')
-    console.log('this.props ======', this.props);
-
-  }
-  renderSelectedProcess = () => {
-  }
   renderSubHeader = () => {
     return this.props.steps.map((process) => {
       return (
-        <div key={process.id}>
+        <div key={process.id} onClick={() => this.setState({isActive : process.id})} >
           <ExactNavLink className="link" to={`/process/${process.id}`}>
           <SubHeaderLink
             icon={process.icon}
             title={process.title}
+            id={process.id}
           />
           </ExactNavLink>
         </div>
@@ -46,7 +36,6 @@ class OurProcess extends React.Component {
   render() {
     return (
       <div className="our-process">
-        {this.renderSelectedProcess()}
         <SubHeader>{this.renderSubHeader()}</SubHeader>
         <ProcessDetail  />
         <div id="up">

@@ -23,4 +23,5 @@ module.exports = {
     box_black: 'https://res.cloudinary.com/habinezadalvan/image/upload/v1595795052/digitol/box_black_png-min_iemj85.png',
     code: 'https://res.cloudinary.com/habinezadalvan/image/upload/v1595795052/digitol/code-min_xp7oza.png',
     analysis: 'https://res.cloudinary.com/habinezadalvan/image/upload/v1595795052/digitol/analysis-min_li1opq.png',
+    open_box: 'https://res.cloudinary.com/habinezadalvan/image/upload/v1596124376/digitol/open_box-min_xzhser.png',
 }

@@ -2,10 +2,11 @@ import React from 'react';
 
 const Team = () => {
     return(
-        <div id="up">
+        <div >
+            <h1 style={{height: '100vh', marginTop: '8vh'}}>TEAM PAGE</h1>
             <div  id="down" ></div>
             <div  id="reach-us"></div>
-            <div  id="upe"></div>
+            <div  id="up"></div>
         </div>
     )
 }
