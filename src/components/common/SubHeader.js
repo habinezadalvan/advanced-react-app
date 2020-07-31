@@ -60,12 +60,12 @@ const [clicked, setClicked] = useState(false);
   return (
     <>
      <StyledSubHeaderLink clicked={clicked} className="sub-header">
-     <StyledBurger clicked={clicked}   onClick= { () => setClicked(!clicked)}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line2"></div>
-      </StyledBurger>
-         <div className="actual-link" onClick={clicked}>{props.children}</div>
+      <StyledBurger clicked={clicked}   onClick= { () => setClicked(!clicked)}>
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line2"></div>
+        </StyledBurger>
+          <div className="actual-link" onClick= { () => setClicked(!clicked)} >{props.children}</div>
     </StyledSubHeaderLink>
     </>
   );

@@ -4,7 +4,7 @@ import { Link } from "@reach/router";
 
 const Logo = () => {
   return (
-    <Link to="/">
+    <Link to="/" className="link">
       <div className="logo-container">
         <img className="logo" src={images.digitol_white_logo} alt="logo" />
         <p>Digitol</p>

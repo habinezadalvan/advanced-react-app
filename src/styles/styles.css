@@ -123,7 +123,7 @@ body {
   box-sizing: border-box;
   font-family: Inter, "Inter UI", Helvetica, Arial, sans-serif; }
   body p {
-    color: gray; }
+    color: rgba(0, 0, 0, 0.623); }
 
 *,
 *::after,
@@ -139,7 +139,7 @@ body {
       display: block; } }
 
 .active {
-  border-bottom: 0.8rem solid #0570c1;
+  border-bottom: 0.4rem solid #0570c1;
   text-decoration: none; }
 
 .hide {
@@ -320,7 +320,7 @@ body {
 .angle-icon-small {
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #FFFFFF; }
+  border: 0.1rem solid #FFFFFF; }
   .angle-icon-small a,
   .angle-icon-small :link,
   .angle-icon-small :visited {
@@ -730,39 +730,6 @@ body {
     .product-delivery {
       top: -39%; } }
 
-.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 55%; }
-  .header__nav ul {
-    display: flex;
-    justify-content: space-around;
-    text-transform: uppercase;
-    list-style: none; }
-    .header__nav ul .link {
-      text-decoration: none; }
-    .header__nav ul li {
-      padding: 1rem;
-      color: #C4C4C4;
-      font-size: 1.4rem;
-      list-style: none; }
-      .header__nav ul lia,
-      .header__nav ul li :link,
-      .header__nav ul li :visited {
-        text-decoration: none;
-        color: #C4C4C4;
-        font-size: 1.4rem; }
-      .header__nav ul li:hover {
-        background-color: #0570c1;
-        border-radius: .5rem;
-        color: #FFFFFF; }
-        .header__nav ul li:hover a {
-          color: #FFFFFF; }
-    @media (max-width: 56.25em) {
-      .header__nav ul {
-        display: none; } }
-
 .percentage-card-container {
   position: relative;
   width: 80%;
@@ -1168,6 +1135,8 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-start; }
+        .footer .footer__logo-and-content .footer__content .footer__content--info p {
+          color: rgba(214, 222, 228, 0.5); }
         .footer .footer__logo-and-content .footer__content .footer__content--info .footer__info {
           line-height: 3.5rem;
           font-weight: 300; }
@@ -1421,6 +1390,15 @@ body {
   @media (max-width: 23.4375em) {
     .third-section {
       padding: 0rem; } }
+
+.what-do-section {
+  display: flex;
+  flex-flow: row wrap;
+  border: 2px solid red; }
+  .what-do-section .box {
+    height: 50%;
+    width: 50%;
+    border: 2px solid red; }
 
 .our-process {
   position: relative;

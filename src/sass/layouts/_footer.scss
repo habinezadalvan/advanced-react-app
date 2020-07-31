@@ -43,6 +43,9 @@
                 }
             }
             .footer__content--info{
+                p{
+                    color: rgba(214, 222, 228, 0.5);
+                }
                 flex-basis: 90%;
                 @include positioningContent(center, flex-start);
                 .footer__info{

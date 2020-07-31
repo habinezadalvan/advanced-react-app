@@ -1,6 +1,52 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import UlComponent from './UlComponent';
+import {Link} from '@reach/router';
+
+
+const Ul = styled.ul`
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+    li {
+      padding: 40px;
+      width: 10%
+      border: 2px solid #000;
+
+      .link{
+        text-decoration: none;
+        color: #fff
+      }
+    }
+
+    @media (max-width: 900px){
+        flex-flow: column;
+        background-color: #048ffae3;
+        // border-radius: 1rem;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        right: 0px;
+        align-content: center;
+        text-align: center;
+        pointer-events: none
+        clip-path: ${({clicked}) => clicked ? 'circle(1500px at 90% -10%)' : 'circle(0px at 90% -10%)'};
+        -webkit-clip-path: ${({clicked}) => clicked ? 'circle(1500px at 90% -10%)' : 'circle(0px at 90% -10%)'};
+        pointer-events: ${({clicked}) => clicked ? 'all' : 'none'};
+        transition: all .5s ease-out;
+        z-index: 8;
+        li {
+            
+           .link {
+                color: #fff;
+                font-weight: bold;
+                font-size: 18px;
+           }
+        }
+    }
+
+`;
 
 const StyledBurger = styled.div`
   @media (max-width: 900px) {
@@ -44,6 +90,7 @@ const StyledBurger = styled.div`
 export default function Burger() {
   
    const [clicked, setClicked] = useState(false);
+   
 
     return (
       <>
@@ -55,7 +102,10 @@ export default function Burger() {
         </div>
       </StyledBurger>
       
-      <UlComponent clicked={clicked} link1="Home" link2="Team"/>
+      <Ul clicked={clicked}  >
+        <li onClick={() => setClicked(!clicked)}> <Link className="link" to="/" >Home</Link> </li>
+        <li onClick={() => setClicked(!clicked)}> <Link className="link" to="/team" >Team</Link> </li>
+      </Ul>
       </>
     )
 }

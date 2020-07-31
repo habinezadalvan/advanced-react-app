@@ -41,7 +41,9 @@ const FirstSection = () => {
         <BgButton classname="small-btn" />
       </div>
       <div className="directing-btn" id="down">
-        <AngleIcon iconName= {faAngleDown} hreference="#free_section" classname="angle-icon"/>
+        <a href="#free_section" className="link">
+          <AngleIcon iconName= {faAngleDown} classname="angle-icon"/>
+        </a>
       </div>
       <div className="directing-btn invisible" id="up">
         <AngleIcon iconName= {faAngleUp} classname="angle-icon" direction={scrollToTop}/>

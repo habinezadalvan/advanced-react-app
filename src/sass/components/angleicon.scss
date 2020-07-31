@@ -23,7 +23,7 @@
     @extend .angle-icon;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: $color-primary-white;
+    border: .1rem solid $color-primary-white;
     a,
     :link,
     :visited{

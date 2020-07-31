@@ -7,28 +7,19 @@ import { Link } from "@reach/router";
 
 
 
-const isActive = ({isCurrent}) => {
- return isCurrent ? {className: 'active'} : {};
-};
-
-const ExactNavLink = (props) => (
-  <Link getProps= {isActive} {...props} />
-);
-
-
 class OurProcess extends React.Component {
 
   renderSubHeader = () => {
     return this.props.steps.map((process) => {
       return (
-        <div key={process.id} onClick={() => this.setState({isActive : process.id})} >
-          <ExactNavLink className="link" to={`/process/${process.id}`}>
+        <div key={process.id} >
+          <Link className="link" to={`/process/${process.id}`}>
           <SubHeaderLink
             icon={process.icon}
             title={process.title}
             id={process.id}
           />
-          </ExactNavLink>
+          </Link>
         </div>
       );
     });
