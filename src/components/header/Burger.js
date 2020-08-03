@@ -50,8 +50,8 @@ const Ul = styled.ul`
 
 const StyledBurger = styled.div`
   @media (max-width: 900px) {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: ${({clicked}) => clicked ? 'transparent' : '#0570c1'};
     text-align: center;
     border-radius: 50px;
@@ -87,11 +87,10 @@ const StyledBurger = styled.div`
 
 `;
 
-export default function Burger() {
-  
+export default function Burger({url}) {
+
    const [clicked, setClicked] = useState(false);
    
-
     return (
       <>
         <StyledBurger clicked={clicked} onClick={() => setClicked(!clicked)}>
@@ -103,8 +102,8 @@ export default function Burger() {
       </StyledBurger>
       
       <Ul clicked={clicked}  >
-        <li onClick={() => setClicked(!clicked)}> <Link className="link" to="/" >Home</Link> </li>
-        <li onClick={() => setClicked(!clicked)}> <Link className="link" to="/team" >Team</Link> </li>
+        <li onClick={() => setClicked(!clicked)}> <Link className={`link ${url === '/' ? 'active' : ''}`} to="/" >Home</Link> </li>
+        <li onClick={() => setClicked(!clicked)}> <Link className={`link ${url === '/team' ? 'active' : ''}`} to="/team" >Team</Link> </li>
       </Ul>
       </>
     )

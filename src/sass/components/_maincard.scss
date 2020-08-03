@@ -2,10 +2,30 @@
     @extend .big-main-card;
     width: 12rem;
     height: 12rem;
-    padding: 2rem 0.5rem;
+    padding: 2.5rem 0.5rem;
     font-size: 1.5rem;
-    background-color: #fff;
+    background-color: $color-primary-white;
     margin-bottom: 0rem;
+    position: relative;
+    .notation{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5rem;
+        @include positioningContent(center, center);
+        background-color: $color-primary-white ;
+        position: absolute;
+        top: -20%;
+        left: 35%;
+        border: 1px solid $color-primary-dark-blue;
+        z-index: 8;
+        @include responsive(phone) {
+            top: -15%;
+        }
+        p{
+            color: $color-primary-light-blue-full;
+        }
+
+    }
     img{
         height: 3rem;
         width: 3rem;
@@ -16,22 +36,12 @@
         margin-right: 8rem;
     }
 
-    @include responsive(tab-port){
-    width: 9rem;
-    height: 9rem;
-    font-size: 1rem;
-    img{
-        height: 2.5rem;
-        width: 2.5rem;
-        margin-bottom: .5rem;
-    }
-    }
 
     @include responsive(tab-port){
-        width: 10rem;
-        height: 10rem;
-        font-size: .8rem;
-        padding: 1rem 0rem;
+        width: 12rem;
+        height: 12rem;
+        font-size: 1.7rem;
+        padding: 3rem 0rem;
         margin-bottom: 2rem;
         img{
             height: 2.5rem;

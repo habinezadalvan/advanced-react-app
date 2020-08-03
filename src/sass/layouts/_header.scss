@@ -11,12 +11,14 @@
     display: flex;
     padding: 0rem 10rem;
     align-items: center;
-    // @include positioningContent(flex-end, center);
 
 
     @include responsive(tab-port){
-    height: 8vh;
-    // padding: 0rem 5rem;
+    height: 12vh;
     }
+
+    @include responsive(phone){
+        height: 8vh;
+        }
 
 }

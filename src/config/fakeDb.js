@@ -62,19 +62,20 @@ module.exports =[
         },
         {
             id: 8,
-            title: 'Optimization',
-            text: `We optimize our your project when working on your feedback `,
-            icon: images.optimization,
-            image: images.team,
-            classname:"optimization"
-        },
-        {
-            id: 9,
             title: 'Client feedback',
             text: `Your feedback are vital to us. They help us work towards the optimization of your needs and satisfaction`,
             icon: images.review,
             image: images.team,
             classname:"client-feedback"
+        },
+        
+        {
+            id: 9,
+            title: 'Optimization',
+            text: `We optimize our your project when working on your feedback `,
+            icon: images.optimization,
+            image: images.team,
+            classname:"optimization"
         },
         {
             id: 10,

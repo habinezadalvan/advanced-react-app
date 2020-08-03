@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import { useLocation } from '@reach/router';
 import FirstSection from './FirstSection';
 import SecondSection from './secondSection';
 import ThirdSection from './thirdSection';
@@ -10,7 +11,15 @@ import Heading from '../common/Heading';
 import FreeSpace from './freeSpace';
 
 
-const LandingPage = ({referance, inView, entry}) => {
+
+
+const LandingPage = ({referance, inView, entry, pathname}) => {
+    const location = useLocation();
+
+    useEffect(() => {
+        pathname(location.pathname);
+    }, []);
+
     return (
         <div className="home-page">
          <FirstSection />

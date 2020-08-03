@@ -18,6 +18,8 @@ class ThirdSection extends React.Component {
               imageSrc={process.icon}
               text={process.title}
               classname={process.classname}
+              notation="notation"
+              id={process.id}
             />
           </Link>
         </div>
@@ -36,6 +38,8 @@ class ThirdSection extends React.Component {
               imageSrc={process.icon}
               text={process.title}
               classname={process.classname}
+              notation="notation"
+              id={process.id}
             />
           </Link>
         </div>

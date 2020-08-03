@@ -1,10 +1,10 @@
 import React from "react";
 import Navigation from "./Navigation";
 
-const Header = ({ classname }) => {
+const Header = ({ classname, url }) => {
   return (
     <div className={`header ${classname}`} id="header">
-       <Navigation />
+       <Navigation url={url} />
     </div>
    
   );

@@ -2,12 +2,13 @@
     position: relative;
     margin-top: 5rem;
     &__content{
-    margin-top: 6vh;
-    min-height: 93vh;
+        margin-top: 15vh;
+        min-height: 93vh;
         display: flex;
         .left-section{
         min-height: 93vh;
         flex-basis: 50%;
+
         @include positioningContent(center, center);
         position: relative;
         padding: 10rem;
@@ -41,6 +42,7 @@
         .right-section{
             flex-basis: 50%;
             .upper-part{
+                
                 height: 85vh;
                 @include positioningContent(center, center);
                 padding: 7rem;
@@ -64,10 +66,10 @@
                     height: 100vh;
                 }
                 @include responsive(phone){
-                    height: 70vh;
+                    height: 60vh;
                     padding: 1rem;
                     p{
-                       width:  100%;
+                       width:  90%;
                     }
                 }
             }
@@ -123,7 +125,7 @@
             @include responsive(phone){
                 width: 50%;
                 left: 25%;
-                top: 37%;
+                top: 40%;
             }
         }
 

@@ -5,7 +5,7 @@
    }
 }
 .active{
-    border-bottom: .4rem solid $color-primary-dark-blue;
+    border-bottom: .2rem solid $color-primary-dark-blue;
     text-decoration: none;
 }
 .hide{
@@ -63,6 +63,7 @@
     margin-bottom: 2rem;
     transition: all .2s;
     cursor: pointer;
+    z-index: 8;
     img{
         height: 4rem;
         width: 4rem;
@@ -77,6 +78,7 @@
         border: none;
         transform: scale(1.09);
         box-shadow: $box-shadow;
+       
     }
 }
 
@@ -89,7 +91,7 @@
     @include extra-rectangle($color-secondary-dark-gray);
     width: 90%;
     @include positioningContent(center, center);
-    padding-top: 1rem;
+    // padding-top: 1rem;
     .social-icons-container{
         width: 60%;
         @include positioningContent(center, center);
@@ -106,7 +108,19 @@
     left: 0;
     padding: 1rem 3rem;
     z-index: 7;
-    
+    box-shadow: $box-shadow;
+
+    @include responsive(tab-port){
+        height: 9vh;
+        margin-top: 1.8rem;
+    }
+
+    @include responsive(phone){
+        height: 7vh;
+        margin-top: 0rem;
+
+    }
+   
     &__link{
         @include positioningContent(center, flex-start);
         width: 13rem;
@@ -145,7 +159,7 @@
         }
     
     }
-   
+
 }
 
 .link,
