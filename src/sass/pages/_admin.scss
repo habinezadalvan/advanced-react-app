@@ -1,0 +1,38 @@
+.admin {
+    height: 90vh;
+    margin-top: 8vh;
+    position: relative;
+
+    @include responsive(tab-port){
+        height: 80vh;
+        @include positioningContent(center, center);
+    }
+
+    h1{
+        margin-bottom: $medium-padding;
+        font-size: 3.5rem;
+        font-weight: $light-weight;
+        color: $color-primary-opacity-80;
+    }
+    .bg-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+      
+    }
+
+    .form-container{
+        width: 37%;
+        margin-top: 15vh;
+        margin-left: auto;
+        @include responsive(tab-port){
+            margin: 0rem auto;
+            width: 50%;
+            
+        }
+    }
+}

@@ -9,24 +9,6 @@
         color: $color-primary-opacity-80;
     }
     form{
-        .message-us-input{
-            width: 90%;
-            padding: 1.5rem;
-            font-size: 1.8rem;
-            border-radius: $medium-border-radius;
-            margin-bottom: 2rem;
-            border: none;
-            background-color: $bg-color-secondary-light-gray;
-            outline: none;
-            @include responsive(tab-port){
-              width: 95%;
-            }
-
-            @include responsive(phone){
-                width: 100%;
-              }
-
-       }
 
        .text-area{
            textarea{

@@ -7,6 +7,7 @@ import Header from "./header";
 import Team from "./team";
 import OurProcess from "./process";
 import PageNotFound from "./notFound";
+import AdminPage from "./admin";
 
 const App = () => {
   const [url, setUrl] = useState('');
@@ -28,6 +29,7 @@ const pathname = (name) =>{
         <Team pathname={pathname} path="team"/>
         <OurProcess path ='process/:processId'/>
         <PageNotFound default/>
+        <AdminPage path="admin" />
       </Router>
       <Footer />
     </Fragment>

@@ -4,6 +4,7 @@ import SubHeaderLink from "../common/SubHeaderLink";
 import SubHeader from "../common/SubHeader";
 import ProcessDetail from "./ProcessDetail";
 import { Link } from "@reach/router";
+import Ids from "../common/Ids";
 
 
 
@@ -30,10 +31,7 @@ class OurProcess extends React.Component {
       <div className="our-process">
         <SubHeader>{this.renderSubHeader()}</SubHeader>
         <ProcessDetail  />
-        <div id="up">
-          <div id="down"></div>
-          <div id="reach-us"></div>
-        </div>
+        <Ids />
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {useLocation, Link} from '@reach/router';
 import SubHeader from '../common/SubHeader';
 import TeamDetail from './TeamDetail';
+import Ids from '../common/Ids';
 
 const Team = ({pathname}) => {
 
@@ -26,11 +27,7 @@ const Team = ({pathname}) => {
                 </div>
             </SubHeader>
             <TeamDetail />
-            
-            <div id="up">
-                <div id="down" ></div>
-                <div id="reach-us"></div>
-            </div>
+            <Ids />
         </div>
     )
 }
