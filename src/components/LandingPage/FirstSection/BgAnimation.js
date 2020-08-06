@@ -9,6 +9,8 @@ const box3 = React.createRef();
 const box2Small = React.createRef();
 const topbox = React.createRef();
 
+
+
   useEffect(() => {
 
     gsap.to(topbox.current, {
@@ -20,7 +22,7 @@ const topbox = React.createRef();
       
     });
     gsap.to(box1.current, {
-      x: 100,
+      x: 95,
       rotation: 360,
       duration: 35,
       ease:"bounce",
@@ -37,9 +39,9 @@ const topbox = React.createRef();
     });
 
     gsap.from(box2Small.current, {
-      y: -7,
-      duration: 20,
-      scale: 6,
+      y: -9,
+      duration: 10,
+      scale: 8,
       ease:"bounce",
       repeat: -1
     });

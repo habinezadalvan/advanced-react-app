@@ -42,11 +42,11 @@ const FirstSection = () => {
       </div>
       <div className="directing-btn" id="down">
         <a href="#free_section" className="link">
-          <AngleIcon iconName= {faAngleDown} classname="angle-icon"/>
+          <AngleIcon iconName= {faAngleDown} classname="angle-icon fixed-angle-icon"/>
         </a>
       </div>
       <div className="directing-btn invisible" id="up">
-        <AngleIcon iconName= {faAngleUp} classname="angle-icon" direction={scrollToTop}/>
+        <AngleIcon iconName= {faAngleUp} classname="angle-icon fixed-angle-icon" direction={scrollToTop}/>
       </div>
     </div>
   );

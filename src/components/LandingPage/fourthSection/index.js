@@ -8,7 +8,7 @@ const FourthSection = ({referance, inView, entry}) => {
   return (
     <div className="fourth-section" id="services">
       <div className="fourth-section--left">
-        <Heading text2="what we do"/>
+        <Heading text2="What we do"/>
         <WhatWeDoGraphic referance={referance} inView={inView} entry={entry}/>
       </div>
       <div className="fourth-section--right">

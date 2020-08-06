@@ -1,21 +1,19 @@
 .our-process{
     position: relative;
-    margin-top: 5rem;
+    margin-top: 15vh;
     &__content{
-        margin-top: 15vh;
-        min-height: 93vh;
         display: flex;
         .left-section{
-        min-height: 93vh;
+        min-height: 80vh;
         flex-basis: 50%;
 
         @include positioningContent(center, center);
         position: relative;
         padding: 10rem;
         color: $color-primary-white;
-
+        
         @include responsive(phone){
-            min-height: 50vh;
+            min-height: 45vh;
         }
         .process-bg-img{
             img{
@@ -41,41 +39,40 @@
         }
         .right-section{
             flex-basis: 50%;
+            min-height: 80vh;
+            position: relative;
+
+            @include responsive(phone){
+            min-height: 45vh;
+            }
+
             .upper-part{
-                
-                height: 85vh;
-                @include positioningContent(center, center);
-                padding: 7rem;
-                font-size: 2rem;
+                padding-bottom: 4rem;
+
+                .message{
+                    width: 60%;
+                    margin: 5rem auto;
+                    padding: 2rem;
+                    @include textStyle(1.6rem);
+
+                    @include responsive(tab-port){
+                    width: 90%;
+                    flex-direction: column;
+                    font-size: $phone-font-size;
+                    }
+
+                }
                 font-weight: 300;
                 color: $color-gray-opacity-80;
-                line-height: 3rem;
-                p{
-                    width: 70%;
-                    padding: 2rem;
-                    box-shadow: $box-shadow;
-                    transition: all .5s ease;
-                    &:hover{
-                        transform: scale(0.9);
-
-                    }
-
-                }
-
-                @include responsive(tab-land){
-                    height: 100vh;
-                }
-                @include responsive(phone){
-                    height: 60vh;
-                    padding: 1rem;
-                    p{
-                       width:  90%;
-                    }
-                }
+                line-height: 2.5rem;
+              
             }
             .lower-part{
-            @include positioningContent(flex-end, center);
 
+            @include positioningContent(flex-end, center);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
             }
         }
 
@@ -84,11 +81,11 @@
         }
 
         .design-button{
-            width: 18%;
-            height: 8rem;
+            width: 15%;
+            height: 6rem;
             position: absolute;
             top: 45%;
-            left: 41.1%;
+            left: 42.5%;
             display: flex;
             border-radius: 1rem;
             overflow: hidden;
@@ -118,13 +115,12 @@
 
             }
             @include responsive(tab-port){
-                width: 40%;
-                top: 30%;
-                left: 30%;
+                width: 30%;
+                top: 45%;
+                left: 0%;
             }
             @include responsive(phone){
-                width: 50%;
-                left: 25%;
+                width: 40%;
                 top: 40%;
             }
         }

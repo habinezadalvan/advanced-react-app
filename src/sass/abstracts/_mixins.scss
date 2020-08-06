@@ -94,7 +94,11 @@
 
 }
 
-
+@mixin textStyle ($font-size){
+    line-height: 2.5rem;
+    letter-spacing: .1rem;
+    font-size: $font-size;
+}
 @mixin extra-rectangle($bg-color) {
     height: 7rem;
     width: 80%;

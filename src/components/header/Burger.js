@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import {Link} from '@reach/router';
+import {Link, useLocation} from '@reach/router';
 
 
 const Ul = styled.ul`
@@ -90,7 +90,7 @@ const StyledBurger = styled.div`
 export default function Burger({url}) {
 
    const [clicked, setClicked] = useState(false);
-   
+
     return (
       <>
         <StyledBurger clicked={clicked} onClick={() => setClicked(!clicked)}>
@@ -103,7 +103,8 @@ export default function Burger({url}) {
       
       <Ul clicked={clicked}  >
         <li onClick={() => setClicked(!clicked)}> <Link className={`link ${url === '/' ? 'active' : ''}`} to="/" >Home</Link> </li>
-        <li onClick={() => setClicked(!clicked)}> <Link className={`link ${url === '/team' ? 'active' : ''}`} to="/team" >Team</Link> </li>
+        <li onClick={() => setClicked(!clicked)}> <Link className={`link ${url.includes('/process') ? 'active' : ''}`} to="/process/1" >Process</Link> </li>
+        <li onClick={() => setClicked(!clicked)}> <Link className={`link ${url.includes('/team') ? 'active' : ''}`} to="/team/it" >Team</Link> </li>
       </Ul>
       </>
     )

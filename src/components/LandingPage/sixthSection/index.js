@@ -1,8 +1,12 @@
 import React from "react";
+
+
 import SendMessage from "./SendMessage";
 import ExtraRectangle from "./ExtraRectangle";
 
-const SixthSection = () => {
+
+const SixthSection = (props) => {
+ 
   return (
     <div className="sixth-section">
       <div className="sixth-section--left">
@@ -14,5 +18,6 @@ const SixthSection = () => {
     </div>
   );
 };
+
 
 export default SixthSection;

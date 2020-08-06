@@ -2,7 +2,6 @@
     @include sectionPadding(column);
     margin-top: 10rem;
     margin-bottom: 5rem;
-    padding: 0rem 0rem;
 
     &__heading{
         padding-left: 10rem;
@@ -16,7 +15,7 @@
         position: relative;
         z-index: 0;
         &__container{
-            margin-top: 22%;
+            margin-top: 25%;
             width: 100%;
             background-color: transparent;
             z-index: 1;
@@ -24,13 +23,11 @@
             margin-left: 3%;
             justify-content: space-around;
             @include responsive(lg-desktop){
-                margin-top: 24%;
+                margin-top: 27%;
             }
-
             @media (max-width: 88.5em) {
                 margin-top: 19%;
             }
-
             @media (max-width: 72.375em) {
                 margin-top: 35%;
 
@@ -38,7 +35,6 @@
             @include responsive(ipad-pro){
                 margin-top: 29%;
             }
-
             @include responsive(ipad){
                 margin-top: 37%;
 
@@ -60,7 +56,6 @@
 
     }
     &--right{
-        // flex-basis: 55%;
         position: relative;
         .main{
             @include positioningContent(center, center);
@@ -85,6 +80,12 @@
                 width: 35rem;
 
             }
+            @include responsive(iphone6-7-8 ){
+                height: 30rem;
+                width: 30rem;
+
+            }
+            
             }
 
 
@@ -105,9 +106,7 @@
        }
 
     }
-    @include responsive(ipad){
-       margin: 0rem;
-    }
+   
 
     @include responsive(iphone6-7-8){
         padding: 0rem;

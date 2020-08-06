@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="footer__info">
               <h4 className="phone-invisible">Contact us</h4>
               <Contact icon={faComment} content="sms/call/whatsap: +25078000000"/>
-              <Contact icon={faEnvelope} content="digitolabs@gmail.com"/>
+              <Contact icon={faEnvelope} content="digitolabs.contact@gmail.com"/>
               <Contact icon={faStreetView} content="KK 319 ST, Kigali, Kicukiro, Niboyi"/>
               <Contact icon={faMapMarker} content="Kigali, Rwanda"/>
             </div>

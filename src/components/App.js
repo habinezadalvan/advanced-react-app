@@ -26,8 +26,8 @@ const pathname = (name) =>{
       <Header url= {url}/>
       <Router>
         <LandingPage pathname={pathname} path="/" referance={ref} inView={inView} entry={entry} />
-        <Team pathname={pathname} path="team"/>
-        <OurProcess path ='process/:processId'/>
+        <Team pathname={pathname} path="team/:department"/>
+        <OurProcess pathname={pathname} path ='process/:processId'/>
         <PageNotFound default/>
         <AdminPage path="admin" />
       </Router>

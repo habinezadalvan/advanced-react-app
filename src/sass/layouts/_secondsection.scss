@@ -5,7 +5,7 @@
     }
     &--left{
         .content{
-            text-align: center;
+            text-align: initial;
             font-size: $medium-font-size;
             font-weight: $light-weight;
             margin: 2rem auto;
@@ -14,13 +14,16 @@
 
             @include responsive(phone){
                 margin-top: 0rem;
-                width: 80%;
+                width: 100%;
 
             }
         }
         p{
             padding: 2rem;
-            line-height: 3rem;
+            @include textStyle(1.8rem);
+            @include responsive(tab-port){
+                font-size: $phone-font-size;
+            }
         }
     }
     &--right{

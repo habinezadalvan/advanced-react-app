@@ -2,15 +2,15 @@ import React from 'react';
 
 import photo from '../../assets/DBS_Kevin_web_2640.jpg';
 
-export default function MemberCard() {
+export default function MemberCard({name, avatar, role}) {
     return (
         <div className="member-card">
             <div className="photo">
-                <img src={photo} alt="userimage"/>
+                <img src={avatar || photo} alt="userimage"/>
             </div>
              <div className="personal-info">
-                 <p>Mr. Harerimana Carlos</p>
-                 <h2>Software developer</h2>
+                    <p>{`${name}`}</p>
+                    <h2>{`${role}`}</h2>
              </div>
         </div>
     )

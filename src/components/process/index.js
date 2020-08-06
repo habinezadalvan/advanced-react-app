@@ -1,18 +1,24 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { connect } from "react-redux";
 import SubHeaderLink from "../common/SubHeaderLink";
 import SubHeader from "../common/SubHeader";
 import ProcessDetail from "./ProcessDetail";
-import { Link } from "@reach/router";
+import { Link, useLocation } from "@reach/router";
 import Ids from "../common/Ids";
 
 
 
-class OurProcess extends React.Component {
+const OurProcess = (props) =>{
 
-  
-  renderSubHeader = () => {
-    return this.props.steps.map((process) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    props.pathname(location.pathname)
+  }, [location.pathname]);
+
+
+  const renderSubHeader = () => {
+    return props.steps.map((process) => {
       return (
         <div key={process.id} >
           <Link className="link" to={`/process/${process.id}`}>
@@ -26,15 +32,13 @@ class OurProcess extends React.Component {
       );
     });
   };
-  render() {
     return (
       <div className="our-process">
-        <SubHeader>{this.renderSubHeader()}</SubHeader>
+        <SubHeader>{renderSubHeader()}</SubHeader>
         <ProcessDetail  />
         <Ids />
       </div>
     );
-  }
 }
 
 const mapStateToProps = (state) => {

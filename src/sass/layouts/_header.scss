@@ -3,22 +3,26 @@
     width: 100%;
     background-color: $color-primary-opacity-80;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9;
     display: flex;
-    padding: 0rem 10rem;
+    padding: 0rem 5rem;
     align-items: center;
 
 
     @include responsive(tab-port){
     height: 12vh;
+    padding: 0rem 10rem;
+
     }
 
     @include responsive(phone){
+
         height: 8vh;
-        }
+
+    }
 
 }

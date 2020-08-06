@@ -17,7 +17,7 @@ const SecondSection = () => {
         toggleActions: 'restart pause none none'
       },
     duration: 2,
-    x: 100,
+    x: 90,
   })
 
   }, [team]);
@@ -26,8 +26,9 @@ const SecondSection = () => {
       <div className="second-section--left">
         <div className="second-section__heading"><Heading text1="Why we do" text2="What we do"/></div>
         <div className="content">
-            <p>We want to support campanies, institutions, and individuals with amazing and quality products and services but with less visibility and accessibility. </p>
-            <p>Our purpose is to serve you selflessly and make your business grow tremendously.</p>
+            <p>We want to support campanies, institutions, and individuals with amazing and quality products and services but with less visibility and accessibility. 
+            Our purpose is to serve you selflessly and make your business grow tremendously.
+            </p>
         </div>
       </div>
       <div className="second-section--right">

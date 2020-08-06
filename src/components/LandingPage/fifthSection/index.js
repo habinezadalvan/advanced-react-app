@@ -31,7 +31,7 @@ const FifthSection = () => {
     return (
         <div className="fifth-section">
         <div className="fifth-section--left">
-            <Heading text1="our core" text2="values" />
+            <Heading text1="Our core" text2="values" />
             <PercentageCard />
         </div>
         <div className="fifth-section--right">

@@ -25,7 +25,7 @@ const LandingPage = ({referance, inView, entry, pathname}) => {
          <FirstSection />
          <SecondSection />
          <FreeSpace>
-            <Heading text1="how we do" text2="what we do" />
+            <Heading text1="How we do" text2="what we do" />
          </FreeSpace>
          <ThirdSection />
          <FourthSection referance={referance} inView={inView} entry={entry} />

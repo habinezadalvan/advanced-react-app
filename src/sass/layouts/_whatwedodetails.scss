@@ -1,12 +1,9 @@
 .what-do-section{
     display: flex;
     flex-flow: row wrap;
-    // height: 100rem;
-    border: 2px solid red;
 
     .box {
         height: 50%;
         width: 50%;
-        border: 2px solid red;
     }
 }

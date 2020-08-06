@@ -1,7 +1,6 @@
 .free-section{
     @include sectionPadding(column);
     padding: 0rem 10rem;
-    margin-top: 2rem;
 
     @media (max-width: 56.25em) and (min-width: 36.8em) {
         margin-bottom: -4rem;
