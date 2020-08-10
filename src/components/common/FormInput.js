@@ -6,6 +6,7 @@ const FormIput = ({ type, placeholder, name, value, onChange }) => {
       {type === "textarea" ? (
         <div className="text-area">
           <textarea
+            required
             type={type}
             placeholder={placeholder}
             value={value}
@@ -26,6 +27,7 @@ const FormIput = ({ type, placeholder, name, value, onChange }) => {
           value={value}
           name={name}
           onChange={onChange}
+          required
         />
       )}
     </div>

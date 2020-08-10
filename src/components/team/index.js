@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {useLocation, Link, useParams} from '@reach/router';
+import {useLocation, Link} from '@reach/router';
 
 import SubHeader from '../common/SubHeader';
 import TeamDetail from './TeamDetail';

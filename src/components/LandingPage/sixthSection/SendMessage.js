@@ -1,40 +1,71 @@
 import React, { Component } from "react";
-import {connect} from 'react-redux';
+import { connect } from "react-redux";
 import SubmitButton from "../../common/SubmitButton";
 import FormIput from "../../common/FormInput";
-import {sendMessageAction} from '../../../actions/index';
+import { sendMessageAction } from "../../../actions/index";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 class SendMessage extends Component {
 
+  state = { email: "", subject: "", message: "", clicked: false };
 
-  state = { email: "", subject: '', message: ''};
 
-  onInputChange = ({target: {name, value}}) => {
+  onInputChange = ({ target: { name, value } }) => {
     this.setState({ [name]: value });
   };
 
+  notify = () => {
+    const {
+      message: { status, data },
+    } = this.props;
+    if (status === 200) toast(data.message);
+    
+  };
 
 
   onFormSubmit = (e) => {
     e.preventDefault();
-   const { sendMessageAction } = this.props;
+    const { sendMessageAction } = this.props;
 
-   const userInput = {
-    email: this.state.email,
-    subject: this.state.subuject,
-    message: this.state.message,
+    const userInput = {
+      email: this.state.email,
+      subject: this.state.subject,
+      message: this.state.message,
+    };
+
+    sendMessageAction(userInput);
+
+    this.setState({
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
+
+
+  handleClick = () => {
+  
+    this.setState({clicked: true})
   }
 
-  sendMessageAction(userInput);
 
-  }
   render() {
+
     return (
       <div className="message-us" id="message-us">
+        <div>
+        {this.notify()}
+        </div>
+        <ToastContainer 
+          position="bottom-left"
+        />
         <h1>Message us</h1>
         <form onSubmit={this.onFormSubmit}>
           <FormIput
-            type="text"
+            type="email"
             placeholder="Your email"
             value={this.state.email}
             name="email"
@@ -47,7 +78,6 @@ class SendMessage extends Component {
             name="subject"
             onChange={this.onInputChange}
           />
-
           <FormIput
             type="textarea"
             placeholder="Message.."
@@ -55,7 +85,7 @@ class SendMessage extends Component {
             name="message"
             onChange={this.onInputChange}
           />
-          <SubmitButton/>
+          <SubmitButton />
         </form>
       </div>
     );
@@ -63,7 +93,8 @@ class SendMessage extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return state;
-}
+  console.log("state", state.message.status);
+  return { message: state.message };
+};
 
-export default connect(mapStateToProps, {sendMessageAction})(SendMessage);
+export default connect(mapStateToProps, { sendMessageAction })(SendMessage);

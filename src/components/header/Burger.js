@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import {Link, useLocation} from '@reach/router';
+import {Link} from '@reach/router';
 
 
 const Ul = styled.ul`
@@ -22,7 +22,6 @@ const Ul = styled.ul`
     @media (max-width: 900px){
         flex-flow: column;
         background-color: #048ffae3;
-        // border-radius: 1rem;
         height: 100vh;
         position: fixed;
         top: 0px;
@@ -83,8 +82,6 @@ const StyledBurger = styled.div`
       }
   }
   }
-    
-
 `;
 
 export default function Burger({url}) {

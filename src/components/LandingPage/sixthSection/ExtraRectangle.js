@@ -9,7 +9,7 @@ const ExtraRectangle = () => {
   return (
         <div className="extra-rectangle">
           <div className="social-icons-container">
-            <SocialIcon icon={twitter} alt="twitter" />
+            <SocialIcon icon={twitter} alt="twitter" site="https://twitter.com/digitol5" />
             <SocialIcon icon={linkedin} alt="linkedin" />
             <SocialIcon icon={facebook} alt="facebook" />
             <SocialIcon icon={instagram} alt="instagram" />

@@ -23,6 +23,7 @@ const fetchPeople = async () => {
 
 export const sendMessageAction = (userInput) => async dispatch => {
     const data = await axios.post(`${actionTypes.BACK_END_BASE_URL}/contact`, userInput);
+    console.log('data.data.message', data);
     dispatch({type: actionTypes.sendMessage, payload: data});
    }
 
