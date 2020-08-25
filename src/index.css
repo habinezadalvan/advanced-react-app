@@ -1,3 +1,9 @@
+html{
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,112 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-bar{
+  width: 60%;
+  padding: .7rem;
+  text-align: center;
+  background-color: rgb(139, 35, 139);
+  color: #eee;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.info-div{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.info{
+  flex-basis: 48%;
+}
+
+.song-list{
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.details-container{
+  padding: 0;
+}
+.song-details{
+  display: flex;
+  align-items: center;
+ 
+  background-color: #e5e5e5;
+  margin: 0rem auto .5rem auto;
+  /* width: 90%; */
+  padding: .8rem;
+}
+
+.song-info{
+  flex-basis: 90%;
+}
+
+.delete{
+  color: tomato;
+  cursor: pointer;
+}
+
+
+.add-song-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10rem;
+  background-color: #666;
+  padding: 1rem;
+  color: #fff;
+}
+
+.inputs {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 85%;
+
+}
+
+.input-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.add-song-form .inputs .input-container input[type="text"] {
+  flex-basis: 85%;
+  height: 80%;
+  outline: none;
+  border: none;
+  border-radius: .2rem;
+  padding: 1rem;
+
+}
+
+.btn-div{
+  width: 100%;
+  flex-basis: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-song-form .btn-div input[type="submit"] {
+  flex-basis: 100%;
+  height: 5rem;
+  border-radius: .2rem;
+  outline: none;
+  border: none;
+  background-color: rgb(139, 35, 139);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.add-song-form .btn-div input[type="submit"]:hover{
+  background-color: rgb(144, 65, 144);
 }
