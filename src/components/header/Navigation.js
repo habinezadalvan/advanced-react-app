@@ -10,11 +10,6 @@ const Nav = styled.nav`
   justify-content: space-around;
   align-items: center;
   position: relative;
-  .logo{
-    height: 4rem;
-    width: 4rem;
-    margin-right: auto;
-  }
 
 `;
 
@@ -23,9 +18,7 @@ function Navigation({url}) {
 
   return (
     <Nav>
-      <div className="logo">
-        <Logo />
-      </div>
+      <Logo/>
      <Burger url={url}/>
     </Nav>
   );

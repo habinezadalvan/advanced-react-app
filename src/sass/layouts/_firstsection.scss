@@ -1,187 +1,70 @@
-.first-section{
-    position: relative;
-    height: 110vh;
-    color: white;
-    .moving-box{
-        height: 7rem;
-        width: 7rem;
-        transition: all 10s;
-        animation: moving-main-box 35s infinite;
-        position: absolute;
-        top: 0;
-        left: 0;
+.first-section {
+  position: relative;
+  height: 100vh;
+  margin-top: 8vh;
+  display: flex;
 
-        img{
-            height: 100%;
-        }
-        @include responsive(phone){
-            height: 4rem;
-            width: 4rem;
-        }
+  @include responsive(phone) {
+   flex-direction: column;
+ }
+
+  .bio-section {
+    flex-basis: 50%;
+    @include positioningContent(center, center);
+   
+    .bio {
+      h1 {
+        margin-bottom: 2rem;
+      }
+      font-size: 1.6rem;
+      padding: 1rem;
+
+      @include responsive(phone) {
+        width: 65%;
+      }
+      @include responsive(surface-duo) {
+        width: 80%;
+      }
     }
-
-    .view{
-        @include positionObsoluteTop;
-            z-index: 2;
-
-    }
-    &__model{
-        @include positionObsoluteTop;
-        position: absolute;
-        background-color: $color-black-model;
-        z-index: 1;
-    }
-    .bg-animations{
-    @include positionObsoluteTop;
-    display: flex;
-    flex-direction: column;
-    z-index: 0;
-    background-color: $color-animations-bg;
-     .top-div{
-        flex-basis: 20%;
-        text-align: center;
-
-        animation: moving-top-box 20s  5s iteration-count direction fill-mode;
-
-        img{
-            height: 7rem;
-            margin-right: 15rem;
-        }
-
-     }
-
-     .lower-div{
-        flex-basis: 80%;
-        display: flex;
-        justify-content: center;
+  }
+  .profile-section {
+    flex-basis: 50%;
+    .profile {
+      img {
+        width: 100%;
+      }
+      .names {
+        height: 6rem;
         @include positioningContent(center, center);
-
-        .box-1{
-            flex-basis: 35%;
-            
-            img{
-                height: 7rem;
-    
-                @include responsive(phone){
-                    height: 4rem;
-                }
-
-            }
-        }
-        .box-2{
-            text-align: center;
-            flex-basis: 30%;
-            @include positioningContent(center, center);
-            flex-direction: column;
-
-            .big-box{
-                height: 35rem;
-                margin-left: 9rem;
-                @include responsive(phone){
-                    height: 10rem;
-                    width: 10rem;
-        
-                }
-            }
-            .small-box{
-            height: 3rem;
-            width: 3rem;
-
-
-           }
-
-        }
-        .box-3{
-            flex-basis: 35%;
-            img{
-            height: 5rem;
-
-
-            }
-
-        }
-
-        @include responsive(phone){
-            flex-direction: column;
-            .box-1{
-                flex-basis: 30%;
-            }
-            .box-2{
-                flex-basis: 40%;
-            }
-            .box-3{
-                flex-basis: 30%;
-            }
-        }
-     }
+        font-size: 1.6rem;
+        font-weight: 500;
+        box-shadow: $box-shadow;
+      }
+      @include responsive(phone) {
+        margin-bottom: 3rem;
+      }
     }
-
-
-    &__content{
-        display: flex;
-        height: 100vh;
-        &--left{
-            flex-basis: 50%;
-         @include positioningContent(center, center);
-
-        }
-        &--right{
-            flex-basis: 50%;
-            @include positioningContent(center, start);
-            @include responsive(phone){
-            @include positioningContent(center, center);
-            }
-        }
-
-        @include responsive(phone){
-            flex-direction: column-reverse;
-        }
+    @include responsive(tab-port) {
+       display: flex;
+    align-items: center;
+    justify-content: center;
     }
-    &__free-space{
-        height: 10vh;
-        display: flex;
-        &--left{
-            flex-basis: 50%;
-        }
-        &--right{
-            flex-basis: 50%;
-            @include positioningContent(flex-end, center);
-            .extra-rectangle{
-                @include extra-rectangle($color-primary-white);
-                .second-section-heading{
-                    padding-top: 5rem;
-                    display: none;
-                }
+  }
 
-            }
-        }
-        @include responsive(phone){
-            flex-direction: column;
-            &--right{
-                .extra-rectangle{
-                    width: 85%;
-                    .second-section-heading{
-                        display: block;
-                    }
-                }
-            }
-        }
-    }
-
-.fixed-get-started{
+  .fixed-get-started {
     position: fixed;
     bottom: 5rem;
     left: 5rem;
     z-index: 999;
     width: 40%;
     animation: moveInLeft 1s ease-in-out;
-    @include responsive(tab-port){
-        bottom: 2rem;
-        left: 2rem;
+    @include responsive(tab-port) {
+      bottom: 2rem;
+      left: 2rem;
     }
   }
 
-  .directing-btn{
+  .directing-btn {
     position: fixed;
     bottom: 5rem;
     right: 5rem;
@@ -191,10 +74,24 @@
     display: flex;
     justify-content: flex-end;
 
-    @include responsive(tab-port){
-        bottom: 2rem;
-        right: 2rem;
+    @include responsive(tab-port) {
+      bottom: 2rem;
+      right: 2rem;
     }
   }
 
+  .social-icons-container {
+    height: 40vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    width: 6rem;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 5rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    z-index: 2;
+  }
 }

@@ -1,53 +1,32 @@
 import React from "react";
-import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import Heading from "../../common/Heading";
-import images from "../../../assets/imageUrls";
-import ContentAndBtn from "./ContentAndBtn";
-import Videos from "./Videos";
-import BgAnimation from "./BgAnimation";
-import BgButton from "../../common/BgButton";
-import AngleIcon from "../../common/AngleIcon";
-import {scrollToTop} from '../../../vanillajs/index';
+import profile from '../../../assets/imageUrls';
+import SocialIcons from "../sixthSection/SocialIcons";
 
 const FirstSection = () => {
   return (
     <div className="first-section" id="home">
-      <div className="view">
-        <div className="first-section__content">
-          <div className="first-section__content--left">
-            <ContentAndBtn />
-          </div>
-          <div className="first-section__content--right">
-            <Videos />
-          </div>
-        </div>
-        <div className="first-section__free-space">
-          <div className="first-section__free-space--left "></div>
-          <div className="first-section__free-space--right">
-            <div className="extra-rectangle">
-              <div className="second-section-heading">
-                <Heading text1="Why we do" text2="what we do" />
-              </div>
-            </div>
-          </div>
+      <div className="bio-section">
+        <div className="bio">
+          <h1>Software developer . Leader . Health enthusiast . Musician</h1>
+          <p>
+            I'm a full-stack software developer experienced in javascript,
+            react.js, and node.js. I enjoy working in a distributed team using
+            Agile methodology. I am enthusiastic about solving all kinds of
+            problems with technology and believe in learning new technologies.
+            Having different backgrounds equips me with a broader way and
+            applying technology in problem-solving.
+          </p>
         </div>
       </div>
-      <BgAnimation />
-      <div className="first-section__model"></div>
-      <div className="moving-box">
-        <img src={images.white_box} alt="whitebox" />
+      <div className="profile-section">
+        <div className="profile">
+          <img src={profile.profile} alt="profile"/>
+          <div className="names" >
+            <p>Mr.Habineza Leon Christian</p>
+          </div>
+        </div>
       </div>
-      <div className="fixed-get-started hide" id="reach-us">
-        <BgButton classname="small-btn" />
-      </div>
-      <div className="directing-btn" id="down">
-        <a href="#free_section" className="link">
-          <AngleIcon iconName= {faAngleDown} classname="angle-icon fixed-angle-icon"/>
-        </a>
-      </div>
-      <div className="directing-btn invisible" id="up">
-        <AngleIcon iconName= {faAngleUp} classname="angle-icon fixed-angle-icon" direction={scrollToTop}/>
-      </div>
+      <SocialIcons />
     </div>
   );
 };

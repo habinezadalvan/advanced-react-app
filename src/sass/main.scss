@@ -1,48 +1,28 @@
-@import './abstracts/mixins';
-@import './abstracts/variables';
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
 
-@import './base/animations';
-@import './base/base';
-@import './base/typography';
-@import './base/utilities';
+@import "./base/animations";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
 
-@import './components/angleicon.scss';
-@import './components/arrow';
-@import './components/barsicon';
-@import './components/bgbutton.scss';
-@import './components/button';
-@import './components/contact';
-@import './components/contentandbutton';
-@import './components/corevalue';
-@import './components/freespace';
-@import './components/logo';
-@import './components/maincard';
-@import './components/percentageCard';
-@import './components/smallvideo';
-@import './components/socialicon';
-@import './components/spinner';
-@import './components/sendmessage';
-@import './components/videos';
+@import "./components/contact";
+@import "./components/logo";
+@import "./components/smallvideo";
+@import "./components/socialicon";
 
-@import './layouts/box';
-@import './layouts/firstsection';
-@import './layouts/fifthsection';
-@import './layouts/footer';
-@import './layouts/fourthsection';
-@import './layouts/header';
-@import './layouts/secondsection';
-@import './layouts/sixthsection';
-@import './layouts/thirdsection';
-@import './layouts/whatwedodetails';
+@import "./layouts/firstsection";
+@import "./layouts/footer";
+@import "./layouts/fourthsection";
+@import "./layouts/header";
+@import "./layouts/secondsection";
+@import "./layouts/thirdsection";
 
+@import "./pages/admin";
+@import "./pages/home";
+@import "./pages/process";
+@import "./pages/team";
 
-
-@import './pages/admin';
-@import './pages/home';
-@import './pages/process';
-@import './pages/team';
-
-
-body{
-    background-color: $color-primary-white;
+body {
+  background-color: $color-primary-white;
 }

@@ -17,14 +17,14 @@ const Footer = () => {
         </div>
         <div className="footer__content">
           <div className="footer__content--line">
-            <div className="invisible-div" ><h4 className="invisible">Contact us</h4></div>
+            <div className="invisible-div" ><h4 className="invisible"></h4></div>
             <div className="line"></div>
           </div>
-          <div className="footer__content--info">
+          <div className="footer__content--info" id="contacts">
             <div className="footer__info">
-              <h4 className="phone-invisible">Contact us</h4>
-              <Contact icon={faComment} content="sms/call/whatsap: +25078000000"/>
-              <Contact icon={faEnvelope} content="digitolabs.contact@gmail.com"/>
+              <h4 className="phone-invisible">Contacts</h4>
+              <Contact icon={faComment} content="sms/call/whatsap: +250789453215"/>
+              <Contact icon={faEnvelope} content="habinezadalvan@gmail.com"/>
               <Contact icon={faStreetView} content="KK 319 ST, Kigali, Kicukiro, Niboyi"/>
               <Contact icon={faMapMarker} content="Kigali, Rwanda"/>
             </div>
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__free-space">
-      <p>&copy;Digitol 2020</p>
+      <p>&copy;Habineza Leon Christian</p>
       </div>
     </div>
   );

@@ -1,18 +1,10 @@
-.logo-container{
-    text-align: center;
-    font-family: $sirin-stencil;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .logo{
-        height: 80%;
-        width: 80%;
-        cursor: pointer;
-    }
-    p{
-        margin-left: 1rem;
-        color: $color-primary-white;
-        font-weight: $regular-weight;
-    }
+
+.logo {
+    font-size: 2.3rem;
+    width: 30%;
+    font-family: $roboto;
+    span{
+      font-family: $alice-font;
+    color: $main-color;
+  }
 }

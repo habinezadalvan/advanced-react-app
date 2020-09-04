@@ -1,114 +1,111 @@
-.third-section{
-    @include sectionPadding(column);
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+.third-section {
+    margin-bottom: 2rem;
 
-    &__heading{
-        padding-left: 10rem;
-    }
+  .info-section {
+    display: flex;
 
-    @include responsive(tab-port){
-        display: flex;
-        flex-direction: column;
-    }
-    &--left{
-        position: relative;
-        z-index: 0;
-        &__container{
-            margin-top: 25%;
-            width: 100%;
-            background-color: transparent;
-            z-index: 1;
-            @include positioningContent(center, center);
-            margin-left: 3%;
-            justify-content: space-around;
-            @include responsive(lg-desktop){
-                margin-top: 27%;
-            }
-            @media (max-width: 88.5em) {
-                margin-top: 19%;
-            }
-            @media (max-width: 72.375em) {
-                margin-top: 35%;
-
-            }
-            @include responsive(ipad-pro){
-                margin-top: 29%;
-            }
-            @include responsive(ipad){
-                margin-top: 37%;
-
-             }
-            @include responsive(tab-port){
-                flex-direction: column;
-                margin-left: 0rem;
-                margin-top: 0rem;
-            }
-      }
-
-      @include responsive(lg-desktop){
-        margin-left: 8rem;
-    }
+    font-size: 1.8rem;
+    width: 60%;
+    margin: 4rem auto;
+    display: flex;
+    flex-flow: wrap;
 
     @include responsive(tab-port){
-         margin-bottom: 9rem;
-    }
+        width: 80%;
 
     }
-    &--right{
+
+    .project-box {
+      width: 50%;
+      height: 30rem;
+      border-radius: 1rem;
+      overflow: hidden;
+
+      .caption {
+        height: 100%;
+        width: 100%;
+        margin: 0rem auto;
+        align-self: center;
+        @include positioningContent(center, center);
+
+        @include positioningContent(center, center);
+
         position: relative;
-        .main{
-            @include positioningContent(center, center);
-            .internal-cards-container{
-                height: 45rem;
-                width: 45rem;
-                border: 2px solid $color-primary-dark-blue;
-                border-radius: 50%;
-                margin-top: 2rem auto;
-            @include positioningContent(center, center);
-
-            @include responsive(lg-desktop){
-                height: 50rem;
-                width: 50rem;
-            }
-
-            @include responsive(android-land){
-                margin-right: 0rem;
-            }
-            @include responsive(iphone6-7-8-exact){
-                height: 35rem;
-                width: 35rem;
-
-            }
-            @include responsive(iphone6-7-8 ){
-                height: 30rem;
-                width: 30rem;
-
-            }
-            
-            }
-
-
-
-            @include responsive(android-land){
-                margin-right: 0rem;
-            }
-
-
-            @media (max-width: 62.5em) {
-                margin-right: 0rem;
-                
-            }
+        .coverimage {
+          height: 50%;
+          width: 50%;
+          object-fit: contain;
+          backface-visibility: hidden;
+          transition: all 1s;
         }
 
-        @include responsive(tab-port){
-            margin-bottom: 9rem;
-       }
+        .story__username {
+            align-self: center;
+        background-color: #000;
+          position: absolute;
+          width: 100%;
+          min-height: 40%;
+          //   background-color: #fff;
+          border-radius: 0.5rem;
+          @include positioningContent(center, center);
+          flex-flow: column;
+          top: 50%;
+          left: 50%;
+          color: #fff;
+          padding: 1rem;
+          //   font-weight: 700;
+          transform: translate(-50%, 20%);
+          //   text-transform: uppercase;
+          text-align: center;
+          font-size: 1.7rem;
+          opacity: 0;
+          transition: all 1s;
+          backface-visibility: hidden;
+          //   border: 2px solid red;
+          h2{
+              margin-bottom: 3rem;
+          }
+          p{
+            margin-bottom: 1rem;
+            color: #e5e5e5;
+            text-align: initial;
 
-    }
-   
+          }
 
-    @include responsive(iphone6-7-8){
-        padding: 0rem;
+          .button{
+              width: 30%;
+              height: 3rem;
+              border: none;
+              outline: none;
+             
+              background-color: $main-color;
+              border-radius: .5rem;
+          @include positioningContent(center, center);
+             
+                a,&:visited{
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                }
+              &:hover{
+              background-color: rgb(105, 0, 105);
+
+              }
+          }
+        }
+      }
+
+      &:hover {
+        .story__username {
+          opacity: 1;
+          transform: translate(-50%, -50%);
+        }
+        .coverimage {
+          transform: translateX(-15rem) scale(0.5);
+          filter: blur(3px) brightness(100%);
+        }
+      }
     }
+  }
 }
