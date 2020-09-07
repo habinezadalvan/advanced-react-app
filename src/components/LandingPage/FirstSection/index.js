@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import profile from '../../../assets/imageUrls';
 import SocialIcons from "../sixthSection/SocialIcons";
 
 const FirstSection = () => {
+
+  const [isClicked, setIsClicked] = useState(false)
+
   return (
     <div className="first-section" id="home">
       <div className="bio-section">
@@ -26,7 +29,8 @@ const FirstSection = () => {
           </div>
         </div>
       </div>
-      <SocialIcons />
+      <div className="toggleBtn" onClick={() => setIsClicked(!isClicked)}>links</div>
+      <div style={{display: isClicked ? 'block' : 'none'}}><SocialIcons /></div>
     </div>
   );
 };

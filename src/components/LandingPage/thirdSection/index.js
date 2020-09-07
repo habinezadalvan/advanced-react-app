@@ -8,7 +8,7 @@ const ThirdSection = () => {
   const displayProjectCards = () => {
 
     return db.map(project => {
-      return <ProjectCard key={project.id} cover={project.image} name={project.name} description={project.description} site={project.link}/>
+      return <ProjectCard key={project.id} cover={project.image} btn={project.btn} name={project.name} description={project.description} site={project.link}/>
     })
 
   }

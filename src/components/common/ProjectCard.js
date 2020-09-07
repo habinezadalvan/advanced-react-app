@@ -1,7 +1,7 @@
 import React from 'react';
 import images from '../../assets/imageUrls';
 
-export default function ProjectCard({name,description, site, cover}) {
+export default function ProjectCard({name,description, site, cover, btn}) {
     return (
         <div className="project-box">
         <figure className="caption">
@@ -10,7 +10,7 @@ export default function ProjectCard({name,description, site, cover}) {
         <h2>{name}</h2>
           <p>{description}</p>
           <div className="button"> <a target="_blank" rel="noreferrer" href={site} >
-              Visit
+              {btn}
           </a></div>
         </figcaption>
         </figure>

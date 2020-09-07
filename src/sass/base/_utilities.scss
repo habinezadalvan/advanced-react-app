@@ -1,23 +1,23 @@
-.home-page{
-    padding: 0 10rem;
-    @include responsive(tab-port) {
-        padding: 0 5rem;
-
-      }
-      @include responsive(phone) {
-        padding: 0 2rem;
-      }
+.home-page {
+  padding: 0 10rem;
+  @include responsive(tab-port) {
+    padding: 0 7rem;
+  }
+  @include responsive(phone) {
+    padding: 0 .5rem;
+  }
 }
-.heading{
-    text-align: center;
-    h1{
-        color: $main-color;
-
+.heading {
+  text-align: center;
+  h1 {
+    color: $main-color;
+  }
+  @include responsive(phone) {
+    font-size: 2rem;
+  }
 }
-}
 
-
-.active{
-   border-bottom: 4px solid $main-color;
-   border-radius: 4px;
+.active {
+  border-bottom: 4px solid $main-color;
+  border-radius: 4px;
 }

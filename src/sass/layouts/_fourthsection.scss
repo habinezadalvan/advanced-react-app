@@ -16,9 +16,15 @@
       @include positioningContent(center, center);
       transition: all 1s;
 
+      @include responsive(tab-port) {
+        margin-bottom: 3rem;
+      }
+
       @include responsive(phone) {
-        width: 30%;
+        width: 100%;
         height: 25rem;
+  
+
       }
       &:hover {
         transform: scale(0.9);
@@ -33,15 +39,23 @@
       }
 
       .info {
+     
         h2 {
           padding: 1rem;
           font-size: 2rem;
           color: $main-color;
+            @include responsive(phone) {
+              font-size: 2.5rem;
+          }
         }
         .about-me-content {
           width: 90%;
-
           margin: 2rem auto;
+          @include responsive(phone) {
+            font-size: 2rem;
+            line-height: 2.7rem;
+            width: 100%;
+        }
         }
       }
     }

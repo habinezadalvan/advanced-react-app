@@ -5,13 +5,13 @@
   display: flex;
 
   @include responsive(phone) {
-   flex-direction: column;
- }
+    flex-direction: column;
+  }
 
   .bio-section {
     flex-basis: 50%;
     @include positioningContent(center, center);
-   
+
     .bio {
       h1 {
         margin-bottom: 2rem;
@@ -21,6 +21,9 @@
 
       @include responsive(phone) {
         width: 65%;
+        p{
+          font-size: 1.8rem;
+        }
       }
       @include responsive(surface-duo) {
         width: 80%;
@@ -45,9 +48,9 @@
       }
     }
     @include responsive(tab-port) {
-       display: flex;
-    align-items: center;
-    justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -80,6 +83,29 @@
     }
   }
 
+  .toggleBtn {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    color: white;
+    background-color: $main-color;
+    position: fixed;
+    bottom: 2rem;
+    left: 5.2rem;
+    z-index: 2;
+    font-size: 1.5rem;
+    @include positioningContent(center, center);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .5s;
+    animation: moveInLeft 1.5s ease-in-out;
+    &:hover{
+      box-shadow: $box-shadow;
+      background-color: rgb(253, 71, 253);
+      color: #444;
+
+}
+  }
   .social-icons-container {
     height: 40vh;
     display: flex;
@@ -88,7 +114,7 @@
     width: 6rem;
     align-items: center;
     position: fixed;
-    bottom: 0;
+    bottom: 7rem;
     left: 5rem;
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;

@@ -1,5 +1,5 @@
 .third-section {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 
   .info-section {
     display: flex;
@@ -10,9 +10,8 @@
     display: flex;
     flex-flow: wrap;
 
-    @include responsive(tab-port){
-        width: 80%;
-
+    @include responsive(tab-port) {
+      width: 80%;
     }
 
     .project-box {
@@ -21,6 +20,9 @@
       border-radius: 1rem;
       overflow: hidden;
 
+      @include responsive(phone) {
+        width: 90%;
+      }
       .caption {
         height: 100%;
         width: 100%;
@@ -40,8 +42,8 @@
         }
 
         .story__username {
-            align-self: center;
-        background-color: #000;
+          align-self: center;
+          background-color: #000;
           position: absolute;
           width: 100%;
           min-height: 40%;
@@ -62,36 +64,35 @@
           transition: all 1s;
           backface-visibility: hidden;
           //   border: 2px solid red;
-          h2{
-              margin-bottom: 3rem;
+          h2 {
+            margin-bottom: 3rem;
           }
-          p{
+          p {
             margin-bottom: 1rem;
             color: #e5e5e5;
             text-align: initial;
-
           }
 
-          .button{
-              width: 30%;
-              height: 3rem;
-              border: none;
-              outline: none;
-             
-              background-color: $main-color;
-              border-radius: .5rem;
-          @include positioningContent(center, center);
-             
-                a,&:visited{
-                    color: white;
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: 1.6rem;
-                }
-              &:hover{
-              background-color: rgb(105, 0, 105);
+          .button {
+            width: 30%;
+            height: 3rem;
+            border: none;
+            outline: none;
 
-              }
+            background-color: $main-color;
+            border-radius: 0.5rem;
+            @include positioningContent(center, center);
+
+            a,
+            &:visited {
+              color: white;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 1.6rem;
+            }
+            &:hover {
+              background-color: rgb(105, 0, 105);
+            }
           }
         }
       }
