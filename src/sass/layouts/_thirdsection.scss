@@ -2,26 +2,25 @@
   margin-bottom: 2rem;
 
   .info-section {
-    display: flex;
-
     font-size: 1.8rem;
-    width: 60%;
+    width: 100%;
     margin: 4rem auto;
-    display: flex;
-    flex-flow: wrap;
+
+    @include positioningContent(center, center);
 
     @include responsive(tab-port) {
-      width: 80%;
+    flex-flow: wrap;
+
     }
 
     .project-box {
-      width: 50%;
+      width: 25%;
       height: 30rem;
       border-radius: 1rem;
       overflow: hidden;
 
-      @include responsive(phone) {
-        width: 90%;
+      @include responsive(tab-port) {
+        width: 40%;
       }
       .caption {
         height: 100%;
@@ -47,7 +46,6 @@
           position: absolute;
           width: 100%;
           min-height: 40%;
-          //   background-color: #fff;
           border-radius: 0.5rem;
           @include positioningContent(center, center);
           flex-flow: column;
@@ -55,22 +53,21 @@
           left: 50%;
           color: #fff;
           padding: 1rem;
-          //   font-weight: 700;
           transform: translate(-50%, 20%);
-          //   text-transform: uppercase;
           text-align: center;
           font-size: 1.7rem;
           opacity: 0;
           transition: all 1s;
           backface-visibility: hidden;
-          //   border: 2px solid red;
           h2 {
             margin-bottom: 3rem;
+            font-weight: 300;
           }
           p {
             margin-bottom: 1rem;
             color: #e5e5e5;
             text-align: initial;
+            font-size: 1.3rem;
           }
 
           .button {

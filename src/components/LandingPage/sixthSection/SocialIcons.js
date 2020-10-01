@@ -5,10 +5,18 @@ import linkedin from "../../../assets/svg/linkedin.svg";
 import facebook from "../../../assets/svg/facebook.svg";
 import instagram from "../../../assets/svg/instagram.svg";
 import github from "../../../assets/svg/github.svg";
+import cv from '../../../assets/cv.png';
 
 const SocialIcons = () => {
   return (
     <div className="social-icons-container">
+        <div className="icon-zero">
+        <SocialIcon
+          icon={cv}
+          alt="cv"
+          site="https://docs.google.com/document/d/1eaFT66tEbyoI-YYjuz3Ke_jWnCS0NaiVlmw2RE_Jym4/edit?usp=sharing"
+        />
+      </div>
        <div className="icon-zero">
         <SocialIcon
           icon={github}

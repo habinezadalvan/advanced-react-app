@@ -182,7 +182,8 @@ body {
       padding: 0 .5rem; } }
 
 .heading {
-  text-align: center; }
+  text-align: center;
+  padding: 4rem; }
   .heading h1 {
     color: #F243F5; }
   @media (max-width: 37.5em) {
@@ -351,7 +352,7 @@ body {
       background-color: #fd47fd;
       color: #444; }
   .first-section .social-icons-container {
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
@@ -588,23 +589,23 @@ body {
 .third-section {
   margin-bottom: 2rem; }
   .third-section .info-section {
-    display: flex;
     font-size: 1.8rem;
-    width: 60%;
+    width: 100%;
     margin: 4rem auto;
     display: flex;
-    flex-flow: wrap; }
+    align-items: center;
+    justify-content: center; }
     @media (max-width: 56.25em) {
       .third-section .info-section {
-        width: 80%; } }
+        flex-flow: wrap; } }
     .third-section .info-section .project-box {
-      width: 50%;
+      width: 25%;
       height: 30rem;
       border-radius: 1rem;
       overflow: hidden; }
-      @media (max-width: 37.5em) {
+      @media (max-width: 56.25em) {
         .third-section .info-section .project-box {
-          width: 90%; } }
+          width: 40%; } }
       .third-section .info-section .project-box .caption {
         height: 100%;
         width: 100%;
@@ -645,11 +646,13 @@ body {
           transition: all 1s;
           backface-visibility: hidden; }
           .third-section .info-section .project-box .caption .story__username h2 {
-            margin-bottom: 3rem; }
+            margin-bottom: 3rem;
+            font-weight: 300; }
           .third-section .info-section .project-box .caption .story__username p {
             margin-bottom: 1rem;
             color: #e5e5e5;
-            text-align: initial; }
+            text-align: initial;
+            font-size: 1.3rem; }
           .third-section .info-section .project-box .caption .story__username .button {
             width: 30%;
             height: 3rem;

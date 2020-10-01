@@ -16,6 +16,9 @@ const Ul = styled.ul`
         text-decoration: none;
         color: gray;
       }
+      .link:hover{
+        color: #F243F5
+      }
     }
 
     @media (max-width: 900px){
