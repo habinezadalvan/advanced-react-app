@@ -592,12 +592,10 @@ body {
     font-size: 1.8rem;
     width: 100%;
     margin: 4rem auto;
+    flex-flow: wrap;
     display: flex;
     align-items: center;
     justify-content: center; }
-    @media (max-width: 56.25em) {
-      .third-section .info-section {
-        flex-flow: wrap; } }
     .third-section .info-section .project-box {
       width: 25%;
       height: 30rem;
@@ -654,7 +652,7 @@ body {
             text-align: initial;
             font-size: 1.3rem; }
           .third-section .info-section .project-box .caption .story__username .button {
-            width: 30%;
+            width: 50%;
             height: 3rem;
             border: none;
             outline: none;
@@ -663,6 +661,9 @@ body {
             display: flex;
             align-items: center;
             justify-content: center; }
+            @media (max-width: 56.25em) {
+              .third-section .info-section .project-box .caption .story__username .button {
+                width: 90%; } }
             .third-section .info-section .project-box .caption .story__username .button a, .third-section .info-section .project-box .caption .story__username .button:visited {
               color: white;
               text-decoration: none;

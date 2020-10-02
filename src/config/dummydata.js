@@ -1,6 +1,9 @@
 const images = require("../assets/imageUrls");
 const visitRwanda = require('../assets/Visit-Rwanda-1024x461.png')
 const converge = require('../assets/converge.png')
+const innate = require('../assets/innate.png')
+const idck = require('../assets/idck.png')
+const lig = require('../assets/lig.png')
 module.exports = [
   {
     id: 3,
@@ -43,7 +46,29 @@ module.exports = [
     image: images.ligLogo,
     btn:'expo'
   },
-
-
+  {
+    id: 6,
+    name: "Innate house web app Design",
+    description: `Innate house is a local e-commerce.`,
+    link: "https://www.figma.com/file/zvm3WO0fsYDun4o3VtGTzo/Innate-house?node-id=0%3A1",
+    image: innate,
+    btn:'Figma'
+  },
+  {
+    id: 7,
+    name: "IDCK website Design",
+    description: `IDCK is a local social interprise.`,
+    link: "https://www.figma.com/file/SOAvXoWHTtOHS77gvV5fzI/IDCK-project?node-id=0%3A1",
+    image: idck,
+    btn:'Figma'
+  },
+  {
+    id: 8,
+    name: "LIG Design",
+    description: `LIG App, is a mobile application designed to automate small saving groups' systems.`,
+    link: "https://www.figma.com/file/NMCl01flUcP0StCYHu6HDM/LIG",
+    image: lig,
+    btn:'Figma'
+  },
 
 ];

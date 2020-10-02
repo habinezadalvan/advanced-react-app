@@ -10,7 +10,7 @@ const FirstSection = () => {
     <div className="first-section" id="home">
       <div className="bio-section">
         <div className="bio">
-          <h1>Software developer . Leader . Health enthusiast</h1>
+          <h1>Software developer . UI/UX Designer . Leader . Health enthusiast</h1>
           <p>
             I'm a full-stack software developer experienced in javascript,
             react.js, and node.js. I enjoy working in a distributed team using
