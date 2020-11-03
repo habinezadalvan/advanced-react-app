@@ -39,7 +39,7 @@ const FourthSection = () => {
               </p>
               <br/>
               <p>
-                I Worked at <a href="https://andela.com/">Andela Kigali</a> as a Javascript Full-stack engineer
+                I Worked at <a href="https://andela.com/" target="_blank">Andela Kigali</a> as a Javascript Full-stack engineer
                 (PREN Stack). Mastered technologies like HTML 5, CSS 3,
                 JavaScript, React, Node.js, ExpressJS, MongoDB and Postgres.
               </p>
@@ -71,7 +71,7 @@ const FourthSection = () => {
           <div className="info">
             <div className="about-me-content">
               <p>
-                I'm a <a href="https://www.dalailamafellows.org/dalai-lama-fellows">Dalai-Lame Fellow 2018</a>. Dalai Lama Fellows cultivates and
+                I'm a <a href="https://www.dalailamafellows.org/dalai-lama-fellows" target="_blank">Dalai-Lame Fellow 2018</a>. Dalai Lama Fellows cultivates and
                 supports a global movement of next generation leaders applying
                 universal values to solve global challenges.
               </p>
