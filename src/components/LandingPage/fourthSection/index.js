@@ -71,7 +71,7 @@ const FourthSection = () => {
           <div className="info">
             <div className="about-me-content">
               <p>
-                I'm a Dalai-Lame Fellow 2018. Dalai Lama Fellows cultivates and
+                I'm a <a href="https://www.dalailamafellows.org/dalai-lama-fellows">Dalai-Lame Fellow 2018</a>. Dalai Lama Fellows cultivates and
                 supports a global movement of next generation leaders applying
                 universal values to solve global challenges.
               </p>
