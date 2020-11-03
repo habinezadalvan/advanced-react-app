@@ -35,7 +35,11 @@ const FourthSection = () => {
             <h2 className="heading">Professional experience</h2>
             <div className="about-me-content">
               <p>
-                I Worked at Andela Kigali as a Javascript Full-stack engineer
+                I work at <a href="https://muhaburatechgroup.com/" target="_blank">Muhabura Tech Group</a> as frontend developer and UI/UX designer. 
+              </p>
+              <br/>
+              <p>
+                I Worked at <a href="https://andela.com/">Andela Kigali</a> as a Javascript Full-stack engineer
                 (PREN Stack). Mastered technologies like HTML 5, CSS 3,
                 JavaScript, React, Node.js, ExpressJS, MongoDB and Postgres.
               </p>
