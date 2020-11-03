@@ -6,6 +6,14 @@ const idck = require('../assets/idck.png')
 const lig = require('../assets/lig.png')
 module.exports = [
   {
+    id: 9,
+    name: "SEKA",
+    description: `Seka is a local e-commerce for food`,
+    link: "https://play.google.com/store/apps/details?id=com.minega25.seka&hl=en",
+    image: images.seka,
+    btn: 'Install'
+  },
+  {
     id: 3,
     name: "Authors haven",
     description: `I worked on both frontend and backend of ​Author’s haven application​ in Andela. Its aim was to create a community of like minded authors to foster inspiration and innovation by leveraging the modern web technology. I used ​Javascript, Reactjs/Redux on frontend and Nodejs/Expressjs , PostgresQL, sequelize ​on Backend..`,
@@ -37,6 +45,14 @@ module.exports = [
     link: "https://github.com/habinezadalvan",
     image: converge,
     btn: 'Github'
+  },
+  {
+    id: 10,
+    name: "Women films production",
+    description: `I redesigned and developed the Women films production ltd's website.`,
+    link: "https://www.womenfilmsproduction.com/index.html",
+    image: images.womenfilms,
+    btn: 'Visit'
   },
   {
     id: 2,
